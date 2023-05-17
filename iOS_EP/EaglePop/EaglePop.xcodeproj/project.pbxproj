@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		852827BB2A14996D0033E354 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 852827BA2A14996D0033E354 /* SnapKit */; };
+		852827BE2A1499810033E354 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 852827BD2A1499810033E354 /* Then */; };
+		852827C12A1499930033E354 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 852827C02A1499930033E354 /* Alamofire */; };
+		852827C42A149DE70033E354 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 852827C32A149DE70033E354 /* RxBlocking */; };
+		852827C62A149DE70033E354 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 852827C52A149DE70033E354 /* RxCocoa */; };
+		852827C82A149DE70033E354 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 852827C72A149DE70033E354 /* RxRelay */; };
+		852827CA2A149DE70033E354 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 852827C92A149DE70033E354 /* RxSwift */; };
+		852827CD2A149E030033E354 /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 852827CC2A149E030033E354 /* ReactorKit */; };
+		852827D52A14C7E90033E354 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852827D42A14C7E90033E354 /* SigninVC.swift */; };
+		852827D72A14EFBE0033E354 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852827D62A14EFBE0033E354 /* Color.swift */; };
 		853B073C29E69B8E000325CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853B073B29E69B8E000325CC /* AppDelegate.swift */; };
 		853B073E29E69B8E000325CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853B073D29E69B8E000325CC /* SceneDelegate.swift */; };
-		853B074029E69B8E000325CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853B073F29E69B8E000325CC /* ViewController.swift */; };
+		853B074029E69B8E000325CC /* LoginReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853B073F29E69B8E000325CC /* LoginReactor.swift */; };
 		853B074529E69B8F000325CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853B074429E69B8F000325CC /* Assets.xcassets */; };
 		853B074829E69B8F000325CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 853B074629E69B8F000325CC /* LaunchScreen.storyboard */; };
-		853B075029E69BD5000325CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 853B074F29E69BD5000325CC /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		852827D42A14C7E90033E354 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
+		852827D62A14EFBE0033E354 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		853B073829E69B8E000325CC /* EaglePop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EaglePop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		853B073B29E69B8E000325CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		853B073D29E69B8E000325CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		853B073F29E69B8E000325CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		853B073F29E69B8E000325CC /* LoginReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginReactor.swift; sourceTree = "<group>"; };
 		853B074429E69B8F000325CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		853B074729E69B8F000325CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		853B074929E69B8F000325CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		853B074F29E69BD5000325CC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +41,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				852827C82A149DE70033E354 /* RxRelay in Frameworks */,
+				852827C12A1499930033E354 /* Alamofire in Frameworks */,
+				852827CD2A149E030033E354 /* ReactorKit in Frameworks */,
+				852827C42A149DE70033E354 /* RxBlocking in Frameworks */,
+				852827C62A149DE70033E354 /* RxCocoa in Frameworks */,
+				852827BB2A14996D0033E354 /* SnapKit in Frameworks */,
+				852827BE2A1499810033E354 /* Then in Frameworks */,
+				852827CA2A149DE70033E354 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		852827CE2A149E830033E354 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				853B073F29E69B8E000325CC /* LoginReactor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		852827D12A149EC30033E354 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				852827D82A14EFE00033E354 /* Extention */,
+				852827CE2A149E830033E354 /* Model */,
+				852827D22A149ED60033E354 /* View */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		852827D22A149ED60033E354 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				852827D42A14C7E90033E354 /* SigninVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		852827D32A14BC820033E354 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				853B074429E69B8F000325CC /* Assets.xcassets */,
+				853B073D29E69B8E000325CC /* SceneDelegate.swift */,
+				853B073B29E69B8E000325CC /* AppDelegate.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		852827D82A14EFE00033E354 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				852827D62A14EFBE0033E354 /* Color.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
 		853B072F29E69B8E000325CC = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +118,10 @@
 		853B073A29E69B8E000325CC /* EaglePop */ = {
 			isa = PBXGroup;
 			children = (
-				853B073B29E69B8E000325CC /* AppDelegate.swift */,
-				853B073D29E69B8E000325CC /* SceneDelegate.swift */,
-				853B073F29E69B8E000325CC /* ViewController.swift */,
-				853B074F29E69BD5000325CC /* Main.storyboard */,
-				853B074429E69B8F000325CC /* Assets.xcassets */,
-				853B074629E69B8F000325CC /* LaunchScreen.storyboard */,
 				853B074929E69B8F000325CC /* Info.plist */,
+				852827D32A14BC820033E354 /* Resource */,
+				853B074629E69B8F000325CC /* LaunchScreen.storyboard */,
+				852827D12A149EC30033E354 /* Sources */,
 			);
 			path = EaglePop;
 			sourceTree = "<group>";
@@ -83,6 +142,16 @@
 			dependencies = (
 			);
 			name = EaglePop;
+			packageProductDependencies = (
+				852827BA2A14996D0033E354 /* SnapKit */,
+				852827BD2A1499810033E354 /* Then */,
+				852827C02A1499930033E354 /* Alamofire */,
+				852827C32A149DE70033E354 /* RxBlocking */,
+				852827C52A149DE70033E354 /* RxCocoa */,
+				852827C72A149DE70033E354 /* RxRelay */,
+				852827C92A149DE70033E354 /* RxSwift */,
+				852827CC2A149E030033E354 /* ReactorKit */,
+			);
 			productName = EaglePop;
 			productReference = 853B073829E69B8E000325CC /* EaglePop.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +180,13 @@
 				Base,
 			);
 			mainGroup = 853B072F29E69B8E000325CC;
+			packageReferences = (
+				852827B92A14996D0033E354 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				852827BC2A1499810033E354 /* XCRemoteSwiftPackageReference "Then" */,
+				852827BF2A1499930033E354 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				852827C22A149DE70033E354 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				852827CB2A149E030033E354 /* XCRemoteSwiftPackageReference "ReactorKit" */,
+			);
 			productRefGroup = 853B073929E69B8E000325CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +201,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				853B075029E69BD5000325CC /* Main.storyboard in Resources */,
 				853B074829E69B8F000325CC /* LaunchScreen.storyboard in Resources */,
 				853B074529E69B8F000325CC /* Assets.xcassets in Resources */,
 			);
@@ -138,9 +213,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				853B074029E69B8E000325CC /* ViewController.swift in Sources */,
+				853B074029E69B8E000325CC /* LoginReactor.swift in Sources */,
 				853B073C29E69B8E000325CC /* AppDelegate.swift in Sources */,
 				853B073E29E69B8E000325CC /* SceneDelegate.swift in Sources */,
+				852827D72A14EFBE0033E354 /* Color.swift in Sources */,
+				852827D52A14C7E90033E354 /* SigninVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +361,6 @@
 				INFOPLIST_FILE = EaglePop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,7 +388,6 @@
 				INFOPLIST_FILE = EaglePop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -350,6 +425,92 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		852827B92A14996D0033E354 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		852827BC2A1499810033E354 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		852827BF2A1499930033E354 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		852827C22A149DE70033E354 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		852827CB2A149E030033E354 /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/ReactorKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		852827BA2A14996D0033E354 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 852827B92A14996D0033E354 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		852827BD2A1499810033E354 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 852827BC2A1499810033E354 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		852827C02A1499930033E354 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 852827BF2A1499930033E354 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		852827C32A149DE70033E354 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 852827C22A149DE70033E354 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		852827C52A149DE70033E354 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 852827C22A149DE70033E354 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		852827C72A149DE70033E354 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 852827C22A149DE70033E354 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		852827C92A149DE70033E354 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 852827C22A149DE70033E354 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		852827CC2A149E030033E354 /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 852827CB2A149E030033E354 /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 853B073029E69B8E000325CC /* Project object */;
 }
