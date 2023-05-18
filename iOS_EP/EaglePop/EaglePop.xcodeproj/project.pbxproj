@@ -17,6 +17,10 @@
 		852827CD2A149E030033E354 /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 852827CC2A149E030033E354 /* ReactorKit */; };
 		852827D52A14C7E90033E354 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852827D42A14C7E90033E354 /* SigninVC.swift */; };
 		852827D72A14EFBE0033E354 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852827D62A14EFBE0033E354 /* Color.swift */; };
+		852827DD2A151EF60033E354 /* Fonts.otf in Resources */ = {isa = PBXBuildFile; fileRef = 852827DC2A151EF60033E354 /* Fonts.otf */; };
+		852827E02A15CFF10033E354 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 852827DF2A15CFF10033E354 /* GoogleSignIn */; };
+		852827E32A15E7D80033E354 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852827E22A15E7D80033E354 /* LoginManager.swift */; };
+		852827E52A15EA090033E354 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852827E42A15EA090033E354 /* UIApplication.swift */; };
 		853B073C29E69B8E000325CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853B073B29E69B8E000325CC /* AppDelegate.swift */; };
 		853B073E29E69B8E000325CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853B073D29E69B8E000325CC /* SceneDelegate.swift */; };
 		853B074029E69B8E000325CC /* LoginReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853B073F29E69B8E000325CC /* LoginReactor.swift */; };
@@ -27,6 +31,9 @@
 /* Begin PBXFileReference section */
 		852827D42A14C7E90033E354 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
 		852827D62A14EFBE0033E354 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		852827DC2A151EF60033E354 /* Fonts.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fonts.otf; sourceTree = "<group>"; };
+		852827E22A15E7D80033E354 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		852827E42A15EA090033E354 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		853B073829E69B8E000325CC /* EaglePop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EaglePop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		853B073B29E69B8E000325CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		853B073D29E69B8E000325CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,7 @@
 				852827BB2A14996D0033E354 /* SnapKit in Frameworks */,
 				852827BE2A1499810033E354 /* Then in Frameworks */,
 				852827CA2A149DE70033E354 /* RxSwift in Frameworks */,
+				852827E02A15CFF10033E354 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +74,7 @@
 		852827D12A149EC30033E354 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				852827E12A15E7CA0033E354 /* Managers */,
 				852827D82A14EFE00033E354 /* Extention */,
 				852827CE2A149E830033E354 /* Model */,
 				852827D22A149ED60033E354 /* View */,
@@ -84,6 +93,8 @@
 		852827D32A14BC820033E354 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				852827D92A151AE70033E354 /* Fonts */,
+				853B074629E69B8F000325CC /* LaunchScreen.storyboard */,
 				853B074429E69B8F000325CC /* Assets.xcassets */,
 				853B073D29E69B8E000325CC /* SceneDelegate.swift */,
 				853B073B29E69B8E000325CC /* AppDelegate.swift */,
@@ -95,8 +106,25 @@
 			isa = PBXGroup;
 			children = (
 				852827D62A14EFBE0033E354 /* Color.swift */,
+				852827E42A15EA090033E354 /* UIApplication.swift */,
 			);
 			path = Extention;
+			sourceTree = "<group>";
+		};
+		852827D92A151AE70033E354 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				852827DC2A151EF60033E354 /* Fonts.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		852827E12A15E7CA0033E354 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				852827E22A15E7D80033E354 /* LoginManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		853B072F29E69B8E000325CC = {
@@ -120,7 +148,6 @@
 			children = (
 				853B074929E69B8F000325CC /* Info.plist */,
 				852827D32A14BC820033E354 /* Resource */,
-				853B074629E69B8F000325CC /* LaunchScreen.storyboard */,
 				852827D12A149EC30033E354 /* Sources */,
 			);
 			path = EaglePop;
@@ -151,6 +178,7 @@
 				852827C72A149DE70033E354 /* RxRelay */,
 				852827C92A149DE70033E354 /* RxSwift */,
 				852827CC2A149E030033E354 /* ReactorKit */,
+				852827DF2A15CFF10033E354 /* GoogleSignIn */,
 			);
 			productName = EaglePop;
 			productReference = 853B073829E69B8E000325CC /* EaglePop.app */;
@@ -186,6 +214,7 @@
 				852827BF2A1499930033E354 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				852827C22A149DE70033E354 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				852827CB2A149E030033E354 /* XCRemoteSwiftPackageReference "ReactorKit" */,
+				852827DE2A15CFF10033E354 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 853B073929E69B8E000325CC /* Products */;
 			projectDirPath = "";
@@ -203,6 +232,7 @@
 			files = (
 				853B074829E69B8F000325CC /* LaunchScreen.storyboard in Resources */,
 				853B074529E69B8F000325CC /* Assets.xcassets in Resources */,
+				852827DD2A151EF60033E354 /* Fonts.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				853B074029E69B8E000325CC /* LoginReactor.swift in Sources */,
+				852827E52A15EA090033E354 /* UIApplication.swift in Sources */,
+				852827E32A15E7D80033E354 /* LoginManager.swift in Sources */,
 				853B073C29E69B8E000325CC /* AppDelegate.swift in Sources */,
 				853B073E29E69B8E000325CC /* SceneDelegate.swift in Sources */,
 				852827D72A14EFBE0033E354 /* Color.swift in Sources */,
@@ -467,6 +499,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		852827DE2A15CFF10033E354 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -509,6 +549,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 852827CB2A149E030033E354 /* XCRemoteSwiftPackageReference "ReactorKit" */;
 			productName = ReactorKit;
+		};
+		852827DF2A15CFF10033E354 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 852827DE2A15CFF10033E354 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
