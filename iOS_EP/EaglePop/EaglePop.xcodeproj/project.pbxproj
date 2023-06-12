@@ -15,32 +15,30 @@
 		852827C82A149DE70033E354 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 852827C72A149DE70033E354 /* RxRelay */; };
 		852827CA2A149DE70033E354 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 852827C92A149DE70033E354 /* RxSwift */; };
 		852827CD2A149E030033E354 /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 852827CC2A149E030033E354 /* ReactorKit */; };
-		852827D52A14C7E90033E354 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852827D42A14C7E90033E354 /* SigninVC.swift */; };
-		852827D72A14EFBE0033E354 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852827D62A14EFBE0033E354 /* Color.swift */; };
 		852827DD2A151EF60033E354 /* Fonts.otf in Resources */ = {isa = PBXBuildFile; fileRef = 852827DC2A151EF60033E354 /* Fonts.otf */; };
 		852827E02A15CFF10033E354 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 852827DF2A15CFF10033E354 /* GoogleSignIn */; };
-		852827E32A15E7D80033E354 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852827E22A15E7D80033E354 /* LoginManager.swift */; };
-		852827E52A15EA090033E354 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852827E42A15EA090033E354 /* UIApplication.swift */; };
 		853B073C29E69B8E000325CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853B073B29E69B8E000325CC /* AppDelegate.swift */; };
 		853B073E29E69B8E000325CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853B073D29E69B8E000325CC /* SceneDelegate.swift */; };
-		853B074029E69B8E000325CC /* LoginReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853B073F29E69B8E000325CC /* LoginReactor.swift */; };
 		853B074529E69B8F000325CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853B074429E69B8F000325CC /* Assets.xcassets */; };
 		853B074829E69B8F000325CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 853B074629E69B8F000325CC /* LaunchScreen.storyboard */; };
+		85A76D992A36BBCC00E5A942 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A76D972A36BBCC00E5A942 /* Color.swift */; };
+		85A76D9A2A36BBCC00E5A942 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A76D982A36BBCC00E5A942 /* UIApplication.swift */; };
+		85A76D9D2A36BBE500E5A942 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A76D9C2A36BBE500E5A942 /* LoginManager.swift */; };
+		85A76D9F2A36BBFA00E5A942 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A76D9E2A36BBFA00E5A942 /* SigninVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		852827D42A14C7E90033E354 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
-		852827D62A14EFBE0033E354 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		852827DC2A151EF60033E354 /* Fonts.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fonts.otf; sourceTree = "<group>"; };
-		852827E22A15E7D80033E354 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
-		852827E42A15EA090033E354 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		853B073829E69B8E000325CC /* EaglePop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EaglePop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		853B073B29E69B8E000325CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		853B073D29E69B8E000325CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		853B073F29E69B8E000325CC /* LoginReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginReactor.swift; sourceTree = "<group>"; };
 		853B074429E69B8F000325CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		853B074729E69B8F000325CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		853B074929E69B8F000325CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85A76D972A36BBCC00E5A942 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		85A76D982A36BBCC00E5A942 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		85A76D9C2A36BBE500E5A942 /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		85A76D9E2A36BBFA00E5A942 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,41 +61,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		852827CE2A149E830033E354 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				853B073F29E69B8E000325CC /* LoginReactor.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		852827D12A149EC30033E354 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				852827E12A15E7CA0033E354 /* Managers */,
+				85A76D9B2A36BBDB00E5A942 /* Managers */,
 				852827D82A14EFE00033E354 /* Extention */,
-				852827CE2A149E830033E354 /* Model */,
-				852827D22A149ED60033E354 /* View */,
+				85A76DA12A36BC1900E5A942 /* ViewModel */,
+				85A76DA02A36BBFD00E5A942 /* View */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		852827D22A149ED60033E354 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				852827D42A14C7E90033E354 /* SigninVC.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		852827D32A14BC820033E354 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				852827D92A151AE70033E354 /* Fonts */,
-				853B074629E69B8F000325CC /* LaunchScreen.storyboard */,
-				853B074429E69B8F000325CC /* Assets.xcassets */,
-				853B073D29E69B8E000325CC /* SceneDelegate.swift */,
-				853B073B29E69B8E000325CC /* AppDelegate.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -105,8 +83,8 @@
 		852827D82A14EFE00033E354 /* Extention */ = {
 			isa = PBXGroup;
 			children = (
-				852827D62A14EFBE0033E354 /* Color.swift */,
-				852827E42A15EA090033E354 /* UIApplication.swift */,
+				85A76D972A36BBCC00E5A942 /* Color.swift */,
+				85A76D982A36BBCC00E5A942 /* UIApplication.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -117,14 +95,6 @@
 				852827DC2A151EF60033E354 /* Fonts.otf */,
 			);
 			name = Fonts;
-			sourceTree = "<group>";
-		};
-		852827E12A15E7CA0033E354 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				852827E22A15E7D80033E354 /* LoginManager.swift */,
-			);
-			path = Managers;
 			sourceTree = "<group>";
 		};
 		853B072F29E69B8E000325CC = {
@@ -147,10 +117,37 @@
 			isa = PBXGroup;
 			children = (
 				853B074929E69B8F000325CC /* Info.plist */,
+				853B074629E69B8F000325CC /* LaunchScreen.storyboard */,
+				853B074429E69B8F000325CC /* Assets.xcassets */,
+				853B073D29E69B8E000325CC /* SceneDelegate.swift */,
+				853B073B29E69B8E000325CC /* AppDelegate.swift */,
 				852827D32A14BC820033E354 /* Resource */,
 				852827D12A149EC30033E354 /* Sources */,
 			);
 			path = EaglePop;
+			sourceTree = "<group>";
+		};
+		85A76D9B2A36BBDB00E5A942 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				85A76D9C2A36BBE500E5A942 /* LoginManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		85A76DA02A36BBFD00E5A942 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85A76D9E2A36BBFA00E5A942 /* SigninVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85A76DA12A36BC1900E5A942 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,13 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				853B074029E69B8E000325CC /* LoginReactor.swift in Sources */,
-				852827E52A15EA090033E354 /* UIApplication.swift in Sources */,
-				852827E32A15E7D80033E354 /* LoginManager.swift in Sources */,
+				85A76D9D2A36BBE500E5A942 /* LoginManager.swift in Sources */,
+				85A76D9A2A36BBCC00E5A942 /* UIApplication.swift in Sources */,
 				853B073C29E69B8E000325CC /* AppDelegate.swift in Sources */,
 				853B073E29E69B8E000325CC /* SceneDelegate.swift in Sources */,
-				852827D72A14EFBE0033E354 /* Color.swift in Sources */,
-				852827D52A14C7E90033E354 /* SigninVC.swift in Sources */,
+				85A76D9F2A36BBFA00E5A942 /* SigninVC.swift in Sources */,
+				85A76D992A36BBCC00E5A942 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
