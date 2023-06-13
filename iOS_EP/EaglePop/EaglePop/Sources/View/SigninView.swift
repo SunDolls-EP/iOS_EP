@@ -13,7 +13,7 @@ import GoogleSignIn
 import SnapKit
 
 
-class SigninVC: UIViewController {
+class SigninView: UIViewController {
     
     let logoImage = UIImageView().then {
         $0.image = UIImage(named: "logo")
