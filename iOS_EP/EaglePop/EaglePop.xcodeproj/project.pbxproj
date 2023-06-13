@@ -18,6 +18,18 @@
 		852827DD2A151EF60033E354 /* Fonts.otf in Resources */ = {isa = PBXBuildFile; fileRef = 852827DC2A151EF60033E354 /* Fonts.otf */; };
 		852827E02A15CFF10033E354 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 852827DF2A15CFF10033E354 /* GoogleSignIn */; };
 		853015442A37E87A008C9380 /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853015432A37E87A008C9380 /* StopWatchView.swift */; };
+		853015472A3846C3008C9380 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853015462A3846C3008C9380 /* TabbarController.swift */; };
+		8530154A2A38490A008C9380 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853015492A38490A008C9380 /* RankingView.swift */; };
+		8530154F2A3849E4008C9380 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8530154E2A3849E4008C9380 /* ProfileView.swift */; };
+		853015512A3849E9008C9380 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853015502A3849E9008C9380 /* CalendarView.swift */; };
+		853015532A384A42008C9380 /* StopWatchReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853015522A384A42008C9380 /* StopWatchReactor.swift */; };
+		853015552A384A55008C9380 /* RankingReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853015542A384A55008C9380 /* RankingReactor.swift */; };
+		853015572A384A5F008C9380 /* ProfileReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853015562A384A5F008C9380 /* ProfileReactor.swift */; };
+		853015592A384A6B008C9380 /* CalendarReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853015582A384A6B008C9380 /* CalendarReactor.swift */; };
+		8530155B2A384B0C008C9380 /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8530155A2A384B0C008C9380 /* SocialView.swift */; };
+		8530155E2A384B3B008C9380 /* SocialReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8530155D2A384B3B008C9380 /* SocialReactor.swift */; };
+		853015602A38547F008C9380 /* TabbarViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8530155F2A38547F008C9380 /* TabbarViewReactor.swift */; };
+		853015622A3858F6008C9380 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853015612A3858F6008C9380 /* TabbarView.swift */; };
 		853B073C29E69B8E000325CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853B073B29E69B8E000325CC /* AppDelegate.swift */; };
 		853B073E29E69B8E000325CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853B073D29E69B8E000325CC /* SceneDelegate.swift */; };
 		853B074529E69B8F000325CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853B074429E69B8F000325CC /* Assets.xcassets */; };
@@ -31,6 +43,18 @@
 /* Begin PBXFileReference section */
 		852827DC2A151EF60033E354 /* Fonts.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fonts.otf; sourceTree = "<group>"; };
 		853015432A37E87A008C9380 /* StopWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchView.swift; sourceTree = "<group>"; };
+		853015462A3846C3008C9380 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		853015492A38490A008C9380 /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
+		8530154E2A3849E4008C9380 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		853015502A3849E9008C9380 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		853015522A384A42008C9380 /* StopWatchReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchReactor.swift; sourceTree = "<group>"; };
+		853015542A384A55008C9380 /* RankingReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingReactor.swift; sourceTree = "<group>"; };
+		853015562A384A5F008C9380 /* ProfileReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileReactor.swift; sourceTree = "<group>"; };
+		853015582A384A6B008C9380 /* CalendarReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarReactor.swift; sourceTree = "<group>"; };
+		8530155A2A384B0C008C9380 /* SocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialView.swift; sourceTree = "<group>"; };
+		8530155D2A384B3B008C9380 /* SocialReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialReactor.swift; sourceTree = "<group>"; };
+		8530155F2A38547F008C9380 /* TabbarViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewReactor.swift; sourceTree = "<group>"; };
+		853015612A3858F6008C9380 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		853B073829E69B8E000325CC /* EaglePop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EaglePop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		853B073B29E69B8E000325CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		853B073D29E69B8E000325CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,8 +127,60 @@
 			isa = PBXGroup;
 			children = (
 				853015432A37E87A008C9380 /* StopWatchView.swift */,
+				853015522A384A42008C9380 /* StopWatchReactor.swift */,
 			);
 			path = StopWatch;
+			sourceTree = "<group>";
+		};
+		853015452A37F1F1008C9380 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				853015462A3846C3008C9380 /* TabbarController.swift */,
+				8530155F2A38547F008C9380 /* TabbarViewReactor.swift */,
+				853015612A3858F6008C9380 /* TabbarView.swift */,
+				8530155C2A384B19008C9380 /* Social */,
+				853015482A3848ED008C9380 /* Ranking */,
+				853015422A37E587008C9380 /* StopWatch */,
+				8530154D2A384964008C9380 /* Calendar */,
+				8530154C2A384955008C9380 /* Profile */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		853015482A3848ED008C9380 /* Ranking */ = {
+			isa = PBXGroup;
+			children = (
+				853015492A38490A008C9380 /* RankingView.swift */,
+				853015542A384A55008C9380 /* RankingReactor.swift */,
+			);
+			path = Ranking;
+			sourceTree = "<group>";
+		};
+		8530154C2A384955008C9380 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8530154E2A3849E4008C9380 /* ProfileView.swift */,
+				853015562A384A5F008C9380 /* ProfileReactor.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8530154D2A384964008C9380 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				853015502A3849E9008C9380 /* CalendarView.swift */,
+				853015582A384A6B008C9380 /* CalendarReactor.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		8530155C2A384B19008C9380 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				8530155A2A384B0C008C9380 /* SocialView.swift */,
+				8530155D2A384B3B008C9380 /* SocialReactor.swift */,
+			);
+			path = Social;
 			sourceTree = "<group>";
 		};
 		853B072F29E69B8E000325CC = {
@@ -149,7 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				85A76D9E2A36BBFA00E5A942 /* SigninView.swift */,
-				853015422A37E587008C9380 /* StopWatch */,
+				853015452A37F1F1008C9380 /* Tabbar */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -252,11 +328,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				85A76D9D2A36BBE500E5A942 /* LoginManager.swift in Sources */,
+				853015622A3858F6008C9380 /* TabbarView.swift in Sources */,
+				8530155E2A384B3B008C9380 /* SocialReactor.swift in Sources */,
+				8530154A2A38490A008C9380 /* RankingView.swift in Sources */,
+				8530155B2A384B0C008C9380 /* SocialView.swift in Sources */,
+				8530154F2A3849E4008C9380 /* ProfileView.swift in Sources */,
+				853015472A3846C3008C9380 /* TabbarController.swift in Sources */,
+				853015572A384A5F008C9380 /* ProfileReactor.swift in Sources */,
 				85A76D9A2A36BBCC00E5A942 /* UIApplication.swift in Sources */,
 				853B073C29E69B8E000325CC /* AppDelegate.swift in Sources */,
+				853015592A384A6B008C9380 /* CalendarReactor.swift in Sources */,
 				853015442A37E87A008C9380 /* StopWatchView.swift in Sources */,
 				853B073E29E69B8E000325CC /* SceneDelegate.swift in Sources */,
+				853015552A384A55008C9380 /* RankingReactor.swift in Sources */,
 				85A76D9F2A36BBFA00E5A942 /* SigninView.swift in Sources */,
+				853015512A3849E9008C9380 /* CalendarView.swift in Sources */,
+				853015602A38547F008C9380 /* TabbarViewReactor.swift in Sources */,
+				853015532A384A42008C9380 /* StopWatchReactor.swift in Sources */,
 				85A76D992A36BBCC00E5A942 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
