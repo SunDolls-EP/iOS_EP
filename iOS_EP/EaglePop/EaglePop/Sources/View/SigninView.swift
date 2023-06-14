@@ -62,7 +62,10 @@ class SigninView: UIViewController {
 
         googleLoginButton.rx.tap
             .subscribe(onNext: {
-                print("googleLogin")
+                let reactor = TabBarViewReactor()
+                let tabBarController = TabBarController(reactor: reactor)
+                tabBarController.modalPresentationStyle = .fullScreen
+                self.present(tabBarController, animated: true)
             },
                        onError: { error in
                 print("onError")
@@ -73,7 +76,10 @@ class SigninView: UIViewController {
                .disposed(by: disposeBag)
         appleLoginButton.rx.tap
             .subscribe(onNext: {
-                print("appleLogin")
+                let reactor = TabBarViewReactor()
+                let tabBarController = TabBarController(reactor: reactor)
+                tabBarController.modalPresentationStyle = .fullScreen
+                self.present(tabBarController, animated: true)
             },
                        onError: { error in
                 print("onError")
