@@ -15,7 +15,7 @@ class CalendarView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = .mainBackgroundColor
         
     }
     
