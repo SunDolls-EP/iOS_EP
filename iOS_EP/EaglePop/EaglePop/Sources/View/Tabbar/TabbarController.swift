@@ -6,44 +6,32 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
-import ReactorKit
-class TabBarController: UIViewController {
-    let tabBarView: TabBarView
 
-    let disposeBag = DisposeBag()
-
-    init(reactor: TabBarViewReactor) {
-        self.tabBarView = TabBarView()
-        super.init(nibName: nil, bundle: nil)
-        self.tabBarView.reactor = reactor
-    }
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
+class TabBarController: UITabBarController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Create reactors for each view controller
-        let firstReactor = SocialReactor()
-//        let secondReactor = RankingReactor()
-//        let thirdReactor = StopWatchReactor()
-//        let fourthReactor = CalendarReactor()
-//        let fifthReactor = ProfileReactor()
-        
         let firstViewController = SocialView()
+        firstViewController.tabBarItem.title = ""
+        firstViewController.tabBarItem.image = UIImage(systemName: "person.3.fill")
         let secondViewController = RankingView()
+        secondViewController.tabBarItem.title = ""
+        secondViewController.tabBarItem.image = UIImage(systemName: "crown.fill")
         let thirdViewController = StopWatchView()
+        thirdViewController.tabBarItem.title = ""
+        thirdViewController.tabBarItem.image = UIImage(systemName: "timer")
         let fourthViewController = CalendarView()
+        fourthViewController.tabBarItem.title = ""
+        fourthViewController.tabBarItem.image = UIImage(systemName: "calendar")
         let fifthViewController = ProfileView()
+        fifthViewController.tabBarItem.title = ""
+        fifthViewController.tabBarItem.image = UIImage(systemName: "person.fill")
         
-        tabBarView.viewControllers = [firstViewController, /*secondViewController, thirdViewController, fourthViewController, fifthViewController*/]
-
-
-        // Add tabBarView as the custom view of the tab bar controller
-//        self.setValue(tabBarView, forKey: "tabBar")
+        view.backgroundColor = .systemBackground
+        self.tabBar.backgroundColor = .white
+        self.tabBar.tintColor = .mainBackgroundColor
+        self.tabBar.unselectedItemTintColor = .systemGray2
+        
+        viewControllers = [firstViewController, secondViewController, thirdViewController, fourthViewController, fifthViewController]
     }
 }
