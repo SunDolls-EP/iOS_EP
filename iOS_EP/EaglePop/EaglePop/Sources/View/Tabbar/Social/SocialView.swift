@@ -21,19 +21,14 @@ class SocialView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        view.backgroundColor = .white
+        view.backgroundColor = .mainBackgroundColor
         
     }
     func setup() {
         [
             appleLoginButton
         ].forEach { self.view.addSubview($0) }
-        appleLoginButton.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(10)
-            $0.bottom.equalToSuperview().offset(50)
-            $0.left.equalToSuperview().offset(70)
-            $0.right.equalToSuperview().offset(-70)
-        }
+
     }
     
 }
