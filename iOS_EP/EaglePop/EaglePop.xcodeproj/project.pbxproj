@@ -28,8 +28,6 @@
 		853015592A384A6B008C9380 /* CalendarReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853015582A384A6B008C9380 /* CalendarReactor.swift */; };
 		8530155B2A384B0C008C9380 /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8530155A2A384B0C008C9380 /* SocialView.swift */; };
 		8530155E2A384B3B008C9380 /* SocialReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8530155D2A384B3B008C9380 /* SocialReactor.swift */; };
-		853015602A38547F008C9380 /* TabbarViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8530155F2A38547F008C9380 /* TabbarViewReactor.swift */; };
-		853015622A3858F6008C9380 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853015612A3858F6008C9380 /* TabbarView.swift */; };
 		853B073C29E69B8E000325CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853B073B29E69B8E000325CC /* AppDelegate.swift */; };
 		853B073E29E69B8E000325CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853B073D29E69B8E000325CC /* SceneDelegate.swift */; };
 		853B074529E69B8F000325CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853B074429E69B8F000325CC /* Assets.xcassets */; };
@@ -53,8 +51,6 @@
 		853015582A384A6B008C9380 /* CalendarReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarReactor.swift; sourceTree = "<group>"; };
 		8530155A2A384B0C008C9380 /* SocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialView.swift; sourceTree = "<group>"; };
 		8530155D2A384B3B008C9380 /* SocialReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialReactor.swift; sourceTree = "<group>"; };
-		8530155F2A38547F008C9380 /* TabbarViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewReactor.swift; sourceTree = "<group>"; };
-		853015612A3858F6008C9380 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		853B073829E69B8E000325CC /* EaglePop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EaglePop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		853B073B29E69B8E000325CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		853B073D29E69B8E000325CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,8 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				853015462A3846C3008C9380 /* TabbarController.swift */,
-				8530155F2A38547F008C9380 /* TabbarViewReactor.swift */,
-				853015612A3858F6008C9380 /* TabbarView.swift */,
 				8530155C2A384B19008C9380 /* Social */,
 				853015482A3848ED008C9380 /* Ranking */,
 				853015422A37E587008C9380 /* StopWatch */,
@@ -328,7 +322,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				85A76D9D2A36BBE500E5A942 /* LoginManager.swift in Sources */,
-				853015622A3858F6008C9380 /* TabbarView.swift in Sources */,
 				8530155E2A384B3B008C9380 /* SocialReactor.swift in Sources */,
 				8530154A2A38490A008C9380 /* RankingView.swift in Sources */,
 				8530155B2A384B0C008C9380 /* SocialView.swift in Sources */,
@@ -343,7 +336,6 @@
 				853015552A384A55008C9380 /* RankingReactor.swift in Sources */,
 				85A76D9F2A36BBFA00E5A942 /* SigninView.swift in Sources */,
 				853015512A3849E9008C9380 /* CalendarView.swift in Sources */,
-				853015602A38547F008C9380 /* TabbarViewReactor.swift in Sources */,
 				853015532A384A42008C9380 /* StopWatchReactor.swift in Sources */,
 				85A76D992A36BBCC00E5A942 /* Color.swift in Sources */,
 			);
