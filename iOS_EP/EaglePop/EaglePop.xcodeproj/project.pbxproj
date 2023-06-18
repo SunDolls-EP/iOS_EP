@@ -36,6 +36,7 @@
 		85A76D9A2A36BBCC00E5A942 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A76D982A36BBCC00E5A942 /* UIApplication.swift */; };
 		85A76D9D2A36BBE500E5A942 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A76D9C2A36BBE500E5A942 /* LoginManager.swift */; };
 		85A76D9F2A36BBFA00E5A942 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A76D9E2A36BBFA00E5A942 /* SigninView.swift */; };
+		85ED1AB42A3E14DB00FB88BD /* CircleProgressbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ED1AB32A3E14DB00FB88BD /* CircleProgressbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		85A76D982A36BBCC00E5A942 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		85A76D9C2A36BBE500E5A942 /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		85A76D9E2A36BBFA00E5A942 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
+		85ED1AB32A3E14DB00FB88BD /* CircleProgressbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			children = (
 				853015432A37E87A008C9380 /* StopWatchView.swift */,
 				853015522A384A42008C9380 /* StopWatchReactor.swift */,
+				85ED1AB32A3E14DB00FB88BD /* CircleProgressbar.swift */,
 			);
 			path = StopWatch;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				853015472A3846C3008C9380 /* TabbarController.swift in Sources */,
 				853015572A384A5F008C9380 /* ProfileReactor.swift in Sources */,
 				85A76D9A2A36BBCC00E5A942 /* UIApplication.swift in Sources */,
+				85ED1AB42A3E14DB00FB88BD /* CircleProgressbar.swift in Sources */,
 				853B073C29E69B8E000325CC /* AppDelegate.swift in Sources */,
 				853015592A384A6B008C9380 /* CalendarReactor.swift in Sources */,
 				853015442A37E87A008C9380 /* StopWatchView.swift in Sources */,

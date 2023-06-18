@@ -62,8 +62,7 @@ class SigninView: UIViewController {
 
         googleLoginButton.rx.tap
             .subscribe(onNext: {
-                let reactor = TabBarViewReactor()
-                let tabBarController = TabBarController(reactor: reactor)
+                let tabBarController = TabBarController()
                 tabBarController.modalPresentationStyle = .fullScreen
                 self.present(tabBarController, animated: true)
             },
@@ -76,8 +75,7 @@ class SigninView: UIViewController {
                .disposed(by: disposeBag)
         appleLoginButton.rx.tap
             .subscribe(onNext: {
-                let reactor = TabBarViewReactor()
-                let tabBarController = TabBarController(reactor: reactor)
+                let tabBarController = TabBarController()
                 tabBarController.modalPresentationStyle = .fullScreen
                 self.present(tabBarController, animated: true)
             },
