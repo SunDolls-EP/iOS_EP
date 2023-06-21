@@ -33,5 +33,6 @@ class TabBarController: UITabBarController {
         self.tabBar.unselectedItemTintColor = .systemGray2
         
         viewControllers = [firstViewController, secondViewController, thirdViewController, fourthViewController, fifthViewController]
+        self.selectedIndex = 2 
     }
 }
