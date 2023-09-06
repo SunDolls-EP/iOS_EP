@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire",
+      "state" : {
+        "revision" : "bc268c28fb170f494de9e9927c371b8342979ece",
+        "version" : "5.7.1"
+      }
+    },
+    {
+      "identity" : "opentds",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Mercen-Lee/OpenTDS.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "feb852e3ac8a92acd917f133a8d4ffc4bcf8d8c6"
+      }
+    }
+  ],
+  "version" : 2
+}
