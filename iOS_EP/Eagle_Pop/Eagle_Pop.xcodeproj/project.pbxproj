@@ -221,6 +221,7 @@
 			packageReferences = (
 				859467BA2A95FC2200F565E4 /* XCRemoteSwiftPackageReference "OpenTDS" */,
 				859467BD2A95FC5900F565E4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				857021E02AA99CEB002CB09E /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 8594679E2A95EF0C00F565E4 /* Products */;
 			projectDirPath = "";
@@ -461,6 +462,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		857021E02AA99CEB002CB09E /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		859467BA2A95FC2200F565E4 /* XCRemoteSwiftPackageReference "OpenTDS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Mercen-Lee/OpenTDS.git";
