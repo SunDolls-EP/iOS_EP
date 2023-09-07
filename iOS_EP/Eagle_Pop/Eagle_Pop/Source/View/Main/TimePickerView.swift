@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct TimePickerView: View {
+    // 상태 변수
     @State private var isLabelVisible = true
     @State private var selectedTime = 25
     @State private var isRunning = false
     @State private var progress: Int = 0
     @State private var startTime: Date?
-    @State private var isPickerVisible = false // Control picker visibility
+    @State private var isPickerVisible = false
     @State private var isPickerHidden = true
     @State private var timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
     @State private var percentage = 1.0
@@ -25,7 +26,7 @@ struct TimePickerView: View {
                 .padding()
             VStack {
                 Group {
-                    if !isRunning {
+                    if !isRunning { // 실행 중이 아닐 때 TimePicker 표시
                         UITimePickerView(values: Array(20...50), selected: $selectedTime)
                     } else {
                         Text({ () -> String in
@@ -41,13 +42,13 @@ struct TimePickerView: View {
                 .frame(width: 200, height: 30)
                 Button(action: {
                     if isRunning {
-                        progress = 0
+                        progress = 0 // 일시정지할 때 타이머와 진행률 초기화
                         withAnimation(.default) {
                             percentage = 1
                         }
                         timer.upstream.connect().cancel()
                     } else {
-                        timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
+                        timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect() // 실행 중이 아닐 때 타이머 시작
                     }
                     isRunning.toggle()
                 }) {
