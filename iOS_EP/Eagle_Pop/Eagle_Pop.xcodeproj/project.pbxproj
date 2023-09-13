@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		857021DF2AA8A55B002CB09E /* UITimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857021DE2AA8A55B002CB09E /* UITimePickerView.swift */; };
-		857ABB352AA5A85B00EDD423 /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857ABB342AA5A85B00EDD423 /* TimePickerView.swift */; };
+		8572D9B72AB1CCA500E70274 /* GangwonEduSaeeum-OTFMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8572D9B62AB1CCA500E70274 /* GangwonEduSaeeum-OTFMedium.otf */; };
+		8572D9BA2AB1CE5F00E70274 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8572D9B92AB1CE5F00E70274 /* Fonts.swift */; };
+		8572D9BC2AB1F82B00E70274 /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8572D9BB2AB1F82B00E70274 /* TimePickerView.swift */; };
 		859467A12A95EF0C00F565E4 /* Eagle_PopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859467A02A95EF0C00F565E4 /* Eagle_PopApp.swift */; };
 		859467A52A95EF0D00F565E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859467A42A95EF0D00F565E4 /* Assets.xcassets */; };
 		859467A82A95EF0D00F565E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859467A72A95EF0D00F565E4 /* Preview Assets.xcassets */; };
@@ -37,7 +39,10 @@
 
 /* Begin PBXFileReference section */
 		857021DE2AA8A55B002CB09E /* UITimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITimePickerView.swift; sourceTree = "<group>"; };
-		857ABB342AA5A85B00EDD423 /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
+		8572D9B62AB1CCA500E70274 /* GangwonEduSaeeum-OTFMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GangwonEduSaeeum-OTFMedium.otf"; sourceTree = "<group>"; };
+		8572D9B82AB1CCF700E70274 /* Eagle-Pop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Eagle-Pop-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8572D9B92AB1CE5F00E70274 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		8572D9BB2AB1F82B00E70274 /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
 		8594679D2A95EF0C00F565E4 /* Eagle_Pop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eagle_Pop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		859467A02A95EF0C00F565E4 /* Eagle_PopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eagle_PopApp.swift; sourceTree = "<group>"; };
 		859467A42A95EF0D00F565E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8572D9B52AB1CC5000E70274 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8572D9B62AB1CCA500E70274 /* GangwonEduSaeeum-OTFMedium.otf */,
+				8572D9B92AB1CE5F00E70274 /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		859467942A95EF0C00F565E4 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +109,7 @@
 		8594679F2A95EF0C00F565E4 /* Eagle_Pop */ = {
 			isa = PBXGroup;
 			children = (
+				8572D9B82AB1CCF700E70274 /* Eagle-Pop-Info.plist */,
 				859467B62A95F71400F565E4 /* Source */,
 				859467B72A95F77400F565E4 /* Resource */,
 				859467A62A95EF0D00F565E4 /* Preview Content */,
@@ -128,6 +143,7 @@
 				859467A42A95EF0D00F565E4 /* Assets.xcassets */,
 				859467A02A95EF0C00F565E4 /* Eagle_PopApp.swift */,
 				85FACF0E2AAAA7B70003A06F /* Request.swift */,
+				8572D9B52AB1CC5000E70274 /* Fonts */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -198,9 +214,9 @@
 			isa = PBXGroup;
 			children = (
 				859469442A9D9BCF00F565E4 /* CircleProgressBar.swift */,
-				857ABB342AA5A85B00EDD423 /* TimePickerView.swift */,
 				857021DE2AA8A55B002CB09E /* UITimePickerView.swift */,
 				85FACF412AACB5350003A06F /* SideSheetView.swift */,
+				8572D9BB2AB1F82B00E70274 /* TimePickerView.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -377,6 +393,7 @@
 				859467B52A95F5B900F565E4 /* Launch Screen.storyboard in Resources */,
 				859467A82A95EF0D00F565E4 /* Preview Assets.xcassets in Resources */,
 				859467A52A95EF0D00F565E4 /* Assets.xcassets in Resources */,
+				8572D9B72AB1CCA500E70274 /* GangwonEduSaeeum-OTFMedium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,12 +407,13 @@
 				859467AF2A95F05100F565E4 /* TabView.swift in Sources */,
 				85FACF082AAA9DBC0003A06F /* MainIntent.swift in Sources */,
 				85FACF562AAE942B0003A06F /* RankingContainer.swift in Sources */,
-				857ABB352AA5A85B00EDD423 /* TimePickerView.swift in Sources */,
 				859467CD2A96017500F565E4 /* CalenderView.swift in Sources */,
 				859467C12A95FE2F00F565E4 /* MainView.swift in Sources */,
 				859467C62A95FF2100F565E4 /* RankingView.swift in Sources */,
 				85FACF4F2AAE920A0003A06F /* TimePickerIntent.swift in Sources */,
+				8572D9BA2AB1CE5F00E70274 /* Fonts.swift in Sources */,
 				85FACF482AAE91CC0003A06F /* TimePickerModel.swift in Sources */,
+				8572D9BC2AB1F82B00E70274 /* TimePickerView.swift in Sources */,
 				857021DF2AA8A55B002CB09E /* UITimePickerView.swift in Sources */,
 				85FACF422AACB5350003A06F /* SideSheetView.swift in Sources */,
 				859467B12A95F10700F565E4 /* SigninView.swift in Sources */,
@@ -539,6 +557,7 @@
 				DEVELOPMENT_TEAM = W7X5HRD463;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Eagle-Pop-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -568,6 +587,7 @@
 				DEVELOPMENT_TEAM = W7X5HRD463;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Eagle-Pop-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
