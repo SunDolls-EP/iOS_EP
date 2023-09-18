@@ -12,43 +12,79 @@ struct MainView: View {
     
     @StateObject private var container: MainContainer<MainIntent, MainModelStateProtocol>
     
-    @State private var isShowingSideSheet = false
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
     var body: some View {
-            Color("default").ignoresSafeArea()
-
-            VStack {
-                HStack {
-                    Button(action: {
+        //        Color.white.ignoresSafeArea()
+        
+        VStack(spacing: 0) {
+            
+            Button(action: {
                 
-                    }) {
-                        Image(systemName: "line.3.horizontal")
-                            .foregroundColor(.white)
-                            .frame(width: 50, height: 50)
-                            .imageScale(.large)
-                            .font(.headline)
+            }) {
+                VStack(spacing: 5) {
+                    ForEach(0..<3) { _ in
+                        Capsule()
+                            .fill(.black)
+                            .frame(width: 25, height: 3)
                     }
-                    Spacer()
-                        .frame(alignment: .topLeading)
                 }
-                NavigationView {
-                    VStack {
-                        TimePickerView.build()
-                        Menu("주간") {
-                            Button("일간", action: self.container.intent.dailyRanking)
-                            Button("주간", action: self.container.intent.weeklyRanking)
-                            Button("월간", action: self.container.intent.monthlyRanking)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(20)
+            .background(.white)
+            
+            VStack(spacing: 18) {
+                TimerView.build()
+                    .frame(alignment: .center)
+                    .padding([.leading, .trailing], 26)
+                    .frame(maxHeight: .infinity)
+                    .background(.white)
+                    .cornerRadius(20)
+                
+                VStack {
+                    Menu("\(container.model.menuTitle)") {
+                        let intent = self.container.intent
+                        Button("일간 랭킹", action: intent.dailyRanking)
+                        Button("주간 랭킹", action: intent.weeklyRanking)
+                        Button("월간 랭킹", action: intent.monthlyRanking)
+                    }
+                    .padding(.top, 5)
+                    .font(.system(size: 25, weight: .semibold))
+                    
+                    HStack {
+                        Button(action: {
+                            
+                        }) {
+                            ForEach([90, 110, 85], id: \.self) { size in
+                                VStack {
+                                    Image(systemName: "person.fill")
+                                        .resizable()
+                                        .foregroundColor(.pink)
+                                        .background(Color.gray)
+                                        .frame(width: CGFloat(size), height: CGFloat(size))
+                                        .cornerRadius(CGFloat(size) / 2)
+                                        .font(.headline)
+                                        .frame(width: size != 110 ? 90 : .none)
+                                    Text("최시훈")
+                                        .font(.custom(helvetica, size: size == 110 ? 30 : 25))
+                                        .foregroundColor(.black)
+                                }
+                            }
                         }
                     }
                 }
-                .frame(maxWidth: .infinity, alignment: .center)
-                Spacer()
+                .padding([.leading, .trailing], 20)
+                .background(.white)
+                .cornerRadius(20)
             }
+            .padding(20)
+        }
+        .padding(.bottom, 56)
     }
 }
+
 extension MainView {
-    
     static func build() -> some View {
         let model = MainModel()
         let intent = MainIntent(model: model)
