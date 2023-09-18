@@ -16,13 +16,15 @@ final class MainIntent {
         }
     
     func dailyRanking() {
-//        Requests.request(<#T##url: String##String#>, <#T##method: HTTPMethod##HTTPMethod#>, <#T##model: (Decodable & Encodable).Protocol##(Decodable & Encodable).Protocol#>, completion: <#T##(Decodable & Encodable) -> Void#>)
-        print("dailyRanking")
+        model?.selectDaily()
+        
     }
     func weeklyRanking() {
+        model?.selectWeekly()
         
     }
     func monthlyRanking() {
+        model?.selectMonthly()
         
     }
 }
