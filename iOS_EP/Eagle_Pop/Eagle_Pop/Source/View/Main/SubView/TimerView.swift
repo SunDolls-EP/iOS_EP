@@ -7,9 +7,7 @@
 
 import SwiftUI
 
-struct TimerView: View {
-    @StateObject private var container: TimerContainer<TimerIntent, TimerModelStateProtocol>
-    
+struct TimerView: View {    
     // 상태 변수
     @State private var isLabelVisible = true
     @State private var selectedTime = 25
@@ -75,16 +73,5 @@ struct TimerView: View {
         .onAppear {
             timer.upstream.connect().cancel()
         }
-    }
-}
-extension TimerView {
-    static func build() -> some View {
-        let model = TimerModel()
-        let intent = TimerIntent(model: model)
-        let container = TimerContainer(
-            intent: intent,
-            model: model as TimerModelStateProtocol,
-            modelChangePublisher: model.objectWillChange)
-        return TimerView(container: container)
     }
 }

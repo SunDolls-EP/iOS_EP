@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		857021DF2AA8A55B002CB09E /* UITimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857021DE2AA8A55B002CB09E /* UITimePickerView.swift */; };
-		8572D9B72AB1CCA500E70274 /* GangwonEduSaeeum-OTFMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8572D9B62AB1CCA500E70274 /* GangwonEduSaeeum-OTFMedium.otf */; };
 		8572D9BA2AB1CE5F00E70274 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8572D9B92AB1CE5F00E70274 /* Fonts.swift */; };
 		8572D9BC2AB1F82B00E70274 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8572D9BB2AB1F82B00E70274 /* TimerView.swift */; };
 		859467A12A95EF0C00F565E4 /* Eagle_PopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859467A02A95EF0C00F565E4 /* Eagle_PopApp.swift */; };
@@ -24,23 +23,17 @@
 		859467C92A95FF8600F565E4 /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859467C82A95FF8600F565E4 /* SocialView.swift */; };
 		859467CD2A96017500F565E4 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859467CC2A96017500F565E4 /* CalenderView.swift */; };
 		859469452A9D9BCF00F565E4 /* CircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859469442A9D9BCF00F565E4 /* CircleProgressBar.swift */; };
+		8597CA142AB96C4E00A3487E /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8597CA132AB96C4E00A3487E /* MainState.swift */; };
+		8597CA1B2AB96CB000A3487E /* MainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8597CA1A2AB96CB000A3487E /* MainAction.swift */; };
+		8597CA1E2AB96CFB00A3487E /* MainEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8597CA1D2AB96CFB00A3487E /* MainEnvironment.swift */; };
+		8597CA2A2AB9FEA300A3487E /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8597CA292AB9FEA300A3487E /* MainReducer.swift */; };
+		8597CA302ABA002F00A3487E /* Eagle-Pop-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8597CA2F2ABA002F00A3487E /* Eagle-Pop-Info.plist */; };
 		859E1BB02AB9631700F8C37D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 859E1BAF2AB9631700F8C37D /* ComposableArchitecture */; };
-		85FACF082AAA9DBC0003A06F /* MainIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF072AAA9DBC0003A06F /* MainIntent.swift */; };
-		85FACF0A2AAA9DF20003A06F /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF092AAA9DF20003A06F /* MainModel.swift */; };
-		85FACF0D2AAA9FCE0003A06F /* MainContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF0C2AAA9FCE0003A06F /* MainContainer.swift */; };
 		85FACF0F2AAAA7B70003A06F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF0E2AAAA7B70003A06F /* Request.swift */; };
-		85FACF3D2AACB25D0003A06F /* RankingIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF3C2AACB25D0003A06F /* RankingIntent.swift */; };
-		85FACF482AAE91CC0003A06F /* TimePickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF472AAE91CC0003A06F /* TimePickerModel.swift */; };
-		85FACF4B2AAE91EB0003A06F /* TimerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF4A2AAE91EB0003A06F /* TimerContainer.swift */; };
-		85FACF4F2AAE920A0003A06F /* TimerIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF4E2AAE920A0003A06F /* TimerIntent.swift */; };
-		85FACF532AAE93D80003A06F /* RankingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF522AAE93D80003A06F /* RankingModel.swift */; };
-		85FACF562AAE942B0003A06F /* RankingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF552AAE942B0003A06F /* RankingContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		857021DE2AA8A55B002CB09E /* UITimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITimePickerView.swift; sourceTree = "<group>"; };
-		8572D9B62AB1CCA500E70274 /* GangwonEduSaeeum-OTFMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GangwonEduSaeeum-OTFMedium.otf"; sourceTree = "<group>"; };
-		8572D9B82AB1CCF700E70274 /* Eagle-Pop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Eagle-Pop-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8572D9B92AB1CE5F00E70274 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		8572D9BB2AB1F82B00E70274 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		8594679D2A95EF0C00F565E4 /* Eagle_Pop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eagle_Pop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,16 +48,18 @@
 		859467C82A95FF8600F565E4 /* SocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialView.swift; sourceTree = "<group>"; };
 		859467CC2A96017500F565E4 /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
 		859469442A9D9BCF00F565E4 /* CircleProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBar.swift; sourceTree = "<group>"; };
-		85FACF072AAA9DBC0003A06F /* MainIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainIntent.swift; sourceTree = "<group>"; };
-		85FACF092AAA9DF20003A06F /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
-		85FACF0C2AAA9FCE0003A06F /* MainContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainer.swift; sourceTree = "<group>"; };
+		8597CA132AB96C4E00A3487E /* MainState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
+		8597CA1A2AB96CB000A3487E /* MainAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAction.swift; sourceTree = "<group>"; };
+		8597CA1D2AB96CFB00A3487E /* MainEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEnvironment.swift; sourceTree = "<group>"; };
+		8597CA1F2AB9E80C00A3487E /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		8597CA202AB9E80C00A3487E /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		8597CA212AB9E80C00A3487E /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		8597CA222AB9E80C00A3487E /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		8597CA232AB9E80C00A3487E /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		8597CA242AB9E80C00A3487E /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		8597CA292AB9FEA300A3487E /* MainReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReducer.swift; sourceTree = "<group>"; };
+		8597CA2F2ABA002F00A3487E /* Eagle-Pop-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Eagle-Pop-Info.plist"; sourceTree = "<group>"; };
 		85FACF0E2AAAA7B70003A06F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		85FACF3C2AACB25D0003A06F /* RankingIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingIntent.swift; sourceTree = "<group>"; };
-		85FACF472AAE91CC0003A06F /* TimePickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerModel.swift; sourceTree = "<group>"; };
-		85FACF4A2AAE91EB0003A06F /* TimerContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerContainer.swift; sourceTree = "<group>"; };
-		85FACF4E2AAE920A0003A06F /* TimerIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerIntent.swift; sourceTree = "<group>"; };
-		85FACF522AAE93D80003A06F /* RankingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingModel.swift; sourceTree = "<group>"; };
-		85FACF552AAE942B0003A06F /* RankingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +79,13 @@
 		8572D9B52AB1CC5000E70274 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				8572D9B62AB1CCA500E70274 /* GangwonEduSaeeum-OTFMedium.otf */,
 				8572D9B92AB1CE5F00E70274 /* Fonts.swift */,
+				8597CA232AB9E80C00A3487E /* Pretendard-Bold.otf */,
+				8597CA222AB9E80C00A3487E /* Pretendard-Light.otf */,
+				8597CA1F2AB9E80C00A3487E /* Pretendard-Medium.otf */,
+				8597CA202AB9E80C00A3487E /* Pretendard-Regular.otf */,
+				8597CA242AB9E80C00A3487E /* Pretendard-SemiBold.otf */,
+				8597CA212AB9E80C00A3487E /* Pretendard-Thin.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -109,7 +109,6 @@
 		8594679F2A95EF0C00F565E4 /* Eagle_Pop */ = {
 			isa = PBXGroup;
 			children = (
-				8572D9B82AB1CCF700E70274 /* Eagle-Pop-Info.plist */,
 				859467B62A95F71400F565E4 /* Source */,
 				859467B72A95F77400F565E4 /* Resource */,
 				859467A62A95EF0D00F565E4 /* Preview Content */,
@@ -129,10 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				859467B82A95F91700F565E4 /* LaunchScreen */,
-				85FACF062AAA9D6B0003A06F /* Model */,
+				859E1BBB2AB9664000F8C37D /* Store */,
 				859467B92A95FB1B00F565E4 /* View */,
-				85FACF0B2AAA9E770003A06F /* Container */,
-				85FACF052AAA9D580003A06F /* Intent */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -140,6 +137,7 @@
 		859467B72A95F77400F565E4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				8597CA2F2ABA002F00A3487E /* Eagle-Pop-Info.plist */,
 				859467A42A95EF0D00F565E4 /* Assets.xcassets */,
 				859467A02A95EF0C00F565E4 /* Eagle_PopApp.swift */,
 				85FACF0E2AAAA7B70003A06F /* Request.swift */,
@@ -210,6 +208,97 @@
 			path = Calender;
 			sourceTree = "<group>";
 		};
+		8597CA0E2AB96BB500A3487E /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				8597CA1C2AB96CEB00A3487E /* Main */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		8597CA0F2AB96BB900A3487E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8597CA132AB96C4E00A3487E /* MainState.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8597CA112AB96BEF00A3487E /* Ranking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ranking;
+			sourceTree = "<group>";
+		};
+		8597CA122AB96C0900A3487E /* State */ = {
+			isa = PBXGroup;
+			children = (
+				8597CA0F2AB96BB900A3487E /* Main */,
+				8597CA112AB96BEF00A3487E /* Ranking */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		8597CA162AB96C8B00A3487E /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				8597CA282AB9FE9400A3487E /* Main */,
+				8597CA272AB9FDD100A3487E /* Action */,
+				8597CA122AB96C0900A3487E /* State */,
+				8597CA0E2AB96BB500A3487E /* Environment */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		8597CA172AB96C9500A3487E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8597CA1A2AB96CB000A3487E /* MainAction.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8597CA182AB96C9900A3487E /* Ranking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ranking;
+			sourceTree = "<group>";
+		};
+		8597CA1C2AB96CEB00A3487E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8597CA1D2AB96CFB00A3487E /* MainEnvironment.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8597CA272AB9FDD100A3487E /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				8597CA172AB96C9500A3487E /* Main */,
+				8597CA182AB96C9900A3487E /* Ranking */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		8597CA282AB9FE9400A3487E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8597CA292AB9FEA300A3487E /* MainReducer.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		859E1BBB2AB9664000F8C37D /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				8597CA162AB96C8B00A3487E /* Reducer */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		85FACF042AAA9B4D0003A06F /* SubView */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,108 +307,6 @@
 				8572D9BB2AB1F82B00E70274 /* TimerView.swift */,
 			);
 			path = SubView;
-			sourceTree = "<group>";
-		};
-		85FACF052AAA9D580003A06F /* Intent */ = {
-			isa = PBXGroup;
-			children = (
-				85FACF122AAC49F80003A06F /* Main */,
-				85FACF392AACB2180003A06F /* Ranking */,
-			);
-			path = Intent;
-			sourceTree = "<group>";
-		};
-		85FACF062AAA9D6B0003A06F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				85FACF102AAC49E20003A06F /* Main */,
-				85FACF512AAE93B20003A06F /* Ranking */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		85FACF0B2AAA9E770003A06F /* Container */ = {
-			isa = PBXGroup;
-			children = (
-				85FACF112AAC49ED0003A06F /* Main */,
-				85FACF542AAE940D0003A06F /* Ranking */,
-			);
-			path = Container;
-			sourceTree = "<group>";
-		};
-		85FACF102AAC49E20003A06F /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				85FACF092AAA9DF20003A06F /* MainModel.swift */,
-				85FACF462AAE8B8E0003A06F /* Sub */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		85FACF112AAC49ED0003A06F /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				85FACF0C2AAA9FCE0003A06F /* MainContainer.swift */,
-				85FACF492AAE91D80003A06F /* Sub */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		85FACF122AAC49F80003A06F /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				85FACF072AAA9DBC0003A06F /* MainIntent.swift */,
-				85FACF4D2AAE91FB0003A06F /* Sub */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		85FACF392AACB2180003A06F /* Ranking */ = {
-			isa = PBXGroup;
-			children = (
-				85FACF3C2AACB25D0003A06F /* RankingIntent.swift */,
-			);
-			path = Ranking;
-			sourceTree = "<group>";
-		};
-		85FACF462AAE8B8E0003A06F /* Sub */ = {
-			isa = PBXGroup;
-			children = (
-				85FACF472AAE91CC0003A06F /* TimePickerModel.swift */,
-			);
-			path = Sub;
-			sourceTree = "<group>";
-		};
-		85FACF492AAE91D80003A06F /* Sub */ = {
-			isa = PBXGroup;
-			children = (
-				85FACF4A2AAE91EB0003A06F /* TimerContainer.swift */,
-			);
-			path = Sub;
-			sourceTree = "<group>";
-		};
-		85FACF4D2AAE91FB0003A06F /* Sub */ = {
-			isa = PBXGroup;
-			children = (
-				85FACF4E2AAE920A0003A06F /* TimerIntent.swift */,
-			);
-			path = Sub;
-			sourceTree = "<group>";
-		};
-		85FACF512AAE93B20003A06F /* Ranking */ = {
-			isa = PBXGroup;
-			children = (
-				85FACF522AAE93D80003A06F /* RankingModel.swift */,
-			);
-			path = Ranking;
-			sourceTree = "<group>";
-		};
-		85FACF542AAE940D0003A06F /* Ranking */ = {
-			isa = PBXGroup;
-			children = (
-				85FACF552AAE942B0003A06F /* RankingContainer.swift */,
-			);
-			path = Ranking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,9 +379,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				859467B52A95F5B900F565E4 /* Launch Screen.storyboard in Resources */,
+				8597CA302ABA002F00A3487E /* Eagle-Pop-Info.plist in Resources */,
 				859467A82A95EF0D00F565E4 /* Preview Assets.xcassets in Resources */,
 				859467A52A95EF0D00F565E4 /* Assets.xcassets in Resources */,
-				8572D9B72AB1CCA500E70274 /* GangwonEduSaeeum-OTFMedium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,26 +393,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				859467AF2A95F05100F565E4 /* TabView.swift in Sources */,
-				85FACF082AAA9DBC0003A06F /* MainIntent.swift in Sources */,
-				85FACF562AAE942B0003A06F /* RankingContainer.swift in Sources */,
 				859467CD2A96017500F565E4 /* CalenderView.swift in Sources */,
+				8597CA1B2AB96CB000A3487E /* MainAction.swift in Sources */,
 				859467C12A95FE2F00F565E4 /* MainView.swift in Sources */,
+				8597CA1E2AB96CFB00A3487E /* MainEnvironment.swift in Sources */,
 				859467C62A95FF2100F565E4 /* RankingView.swift in Sources */,
-				85FACF4F2AAE920A0003A06F /* TimerIntent.swift in Sources */,
 				8572D9BA2AB1CE5F00E70274 /* Fonts.swift in Sources */,
-				85FACF482AAE91CC0003A06F /* TimePickerModel.swift in Sources */,
 				8572D9BC2AB1F82B00E70274 /* TimerView.swift in Sources */,
 				857021DF2AA8A55B002CB09E /* UITimePickerView.swift in Sources */,
 				859467B12A95F10700F565E4 /* SigninView.swift in Sources */,
-				85FACF0A2AAA9DF20003A06F /* MainModel.swift in Sources */,
-				85FACF532AAE93D80003A06F /* RankingModel.swift in Sources */,
+				8597CA142AB96C4E00A3487E /* MainState.swift in Sources */,
+				8597CA2A2AB9FEA300A3487E /* MainReducer.swift in Sources */,
 				85FACF0F2AAAA7B70003A06F /* Request.swift in Sources */,
-				85FACF0D2AAA9FCE0003A06F /* MainContainer.swift in Sources */,
 				859469452A9D9BCF00F565E4 /* CircleProgressBar.swift in Sources */,
-				85FACF4B2AAE91EB0003A06F /* TimerContainer.swift in Sources */,
 				859467A12A95EF0C00F565E4 /* Eagle_PopApp.swift in Sources */,
 				859467C92A95FF8600F565E4 /* SocialView.swift in Sources */,
-				85FACF3D2AACB25D0003A06F /* RankingIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Eagle_Pop/Resource/Eagle-Pop-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -536,6 +519,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Eagle_Pop/Resource/Eagle-Pop-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -557,7 +541,7 @@
 				DEVELOPMENT_TEAM = W7X5HRD463;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Eagle-Pop-Info.plist";
+				INFOPLIST_FILE = "Eagle_Pop/Resource/Eagle-Pop-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -587,7 +571,7 @@
 				DEVELOPMENT_TEAM = W7X5HRD463;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Eagle-Pop-Info.plist";
+				INFOPLIST_FILE = "Eagle_Pop/Resource/Eagle-Pop-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

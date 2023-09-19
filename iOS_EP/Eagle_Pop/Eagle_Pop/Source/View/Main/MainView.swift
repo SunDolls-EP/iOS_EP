@@ -7,36 +7,24 @@
 
 import SwiftUI
 import OpenTDS
+import ComposableArchitecture
 
 struct MainView: View {
-    
-    @StateObject private var container: MainContainer<MainIntent, MainModelStateProtocol>
+    let store: StoreOf<MainReducer>
     
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
-    let intent = self.container.intent
-
     var body: some View {
-        
-        VStack(spacing: 0) {
-            
-            Button(action: {
+        WithViewStore(self.store, observe: { $0 }) { viewStore in
+            VStack(spacing: 0) {
                 
-            }) {
-                VStack(spacing: 5) {
-                    ForEach(0..<3) { _ in
-                        Capsule()
-                            .fill(.black)
-                            .frame(width: 25, height: 3)
-                    }
-                }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(20)
             .background(.white)
             
             VStack(spacing: 18) {
-                TimerView.build()
+                TimerView()
                     .frame(alignment: .center)
                     .padding([.leading, .trailing], 26)
                     .frame(maxHeight: .infinity)
@@ -44,13 +32,14 @@ struct MainView: View {
                     .cornerRadius(20)
                 
                 VStack {
-                    Menu("\(container.model.menuTitle)") {
-                        Button("일간 랭킹", action: intent.dailyRanking)
-                        Button("주간 랭킹", action: intent.weeklyRanking)
-                        Button("월간 랭킹", action: intent.monthlyRanking)
+                    Menu("\(viewStore.menuTitle)") {
+                        Button("일간 랭킹") { viewStore.send(.selectDaily)}
+                        Button("주간 랭킹") { viewStore.send(.selectWeekly)}
+                               Button("월간 랭킹") { viewStore.send(.selectMonthly)}
                     }
                     .padding(.top, 5)
-                    .font(.system(size: 25, weight: .semibold))
+                    //                    .font(.system(size: 25, weight: .semibold))
+                    .font(.custom(pretendardThin, size: 20))
                     
                     HStack {
                         Button(action: {
@@ -67,39 +56,37 @@ struct MainView: View {
                                         .font(.headline)
                                         .frame(width: size != 110 ? 90 : .none)
                                     Text("최시훈")
-                                        .font(.custom(helvetica, size: size == 110 ? 30 : 25))
+                                        .font(.custom(pretendardThin, size: size == 110 ? 30 : 25))
                                         .foregroundColor(.black)
                                 }
                             }
                         }
-                        .onAppear(intent.monthlyRanking)
+                        .onAppear{
+                            for family: String in UIFont.familyNames {
+                                print(family)
+                                for names : String in UIFont.fontNames(forFamilyName: family){
+                                    print("name: \(names)")
+                                }
+                            }
+                        }
                     }
+                    .padding([.leading, .trailing], 20)
+                    .background(.white)
+                    .cornerRadius(20)
                 }
-                .padding([.leading, .trailing], 20)
-                .background(.white)
-                .cornerRadius(20)
+                .padding(20)
             }
-            .padding(20)
+            .padding(.bottom, 56)
         }
-        .padding(.bottom, 56)
-    }
-}
-
-extension MainView {
-    static func build() -> some View {
-        let model = MainModel()
-        let intent = MainIntent(model: model)
-        let container = MainContainer(
-            intent: intent,
-            model: model as MainModelStateProtocol,
-            modelChangePublisher: model.objectWillChange)
-        return MainView(container: container)
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView.build()
+        MainView(store: Store(initialState: MainReducer.State()) {
+            MainReducer()
+        }
+        )
     }
 }
 
