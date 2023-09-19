@@ -8,17 +8,17 @@
 import Foundation
 
 
-protocol TimePickerModelStateProtocol {
+protocol TimerModelStateProtocol {
     
 }
 
-protocol TimePickerModelActionsProtocol: AnyObject {
+protocol TimerModelActionsProtocol: AnyObject {
 }
 
-final class TimePickerModel: ObservableObject, TimePickerModelStateProtocol {
+final class TimerModel: ObservableObject, TimerModelStateProtocol {
       
 }
 
-extension TimePickerModel: TimePickerModelActionsProtocol {
+extension TimerModel: TimerModelActionsProtocol {
 
 }

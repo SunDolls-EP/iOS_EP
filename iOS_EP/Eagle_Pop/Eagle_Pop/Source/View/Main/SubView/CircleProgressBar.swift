@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct CircleProgressView: View {
+    
     let percentage: CGFloat
     var body: some View {
+
         ZStack {
             Circle()
                 .stroke(lineWidth: 3)
@@ -18,8 +20,9 @@ struct CircleProgressView: View {
             Circle()
                 .trim(from: 0.0, to: percentage)
                 .stroke(style: StrokeStyle(lineWidth: 8, lineCap: .round, lineJoin: .round))
-                .foregroundColor(.blue)
+                .foregroundColor(Color.blue)
                 .rotationEffect(Angle(degrees: -90))
         }
     }
 }
+

@@ -8,8 +8,8 @@
 import SwiftUI
 import Combine
 
-final class TimePickerContainer<Intent, Model>: ObservableObject {
-    @Published var timePickerModel: TimePickerModel = TimePickerModel()
+final class TimerContainer<Intent, Model>: ObservableObject {
+    @Published var timerModel: TimerModel = TimerModel()
     
     @State private var selectedTime = 25
     @State private var isRunning = false

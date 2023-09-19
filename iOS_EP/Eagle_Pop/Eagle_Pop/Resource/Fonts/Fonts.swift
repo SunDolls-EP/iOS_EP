@@ -7,4 +7,4 @@
 
 import Foundation
 
-let gangwon = "GangwonEduSaeeum-OTFMedium"
+let helvetica = "Helvetica Neue"

@@ -10,7 +10,7 @@
 		857021DF2AA8A55B002CB09E /* UITimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857021DE2AA8A55B002CB09E /* UITimePickerView.swift */; };
 		8572D9B72AB1CCA500E70274 /* GangwonEduSaeeum-OTFMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8572D9B62AB1CCA500E70274 /* GangwonEduSaeeum-OTFMedium.otf */; };
 		8572D9BA2AB1CE5F00E70274 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8572D9B92AB1CE5F00E70274 /* Fonts.swift */; };
-		8572D9BC2AB1F82B00E70274 /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8572D9BB2AB1F82B00E70274 /* TimePickerView.swift */; };
+		8572D9BC2AB1F82B00E70274 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8572D9BB2AB1F82B00E70274 /* TimerView.swift */; };
 		859467A12A95EF0C00F565E4 /* Eagle_PopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859467A02A95EF0C00F565E4 /* Eagle_PopApp.swift */; };
 		859467A52A95EF0D00F565E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859467A42A95EF0D00F565E4 /* Assets.xcassets */; };
 		859467A82A95EF0D00F565E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859467A72A95EF0D00F565E4 /* Preview Assets.xcassets */; };
@@ -24,15 +24,15 @@
 		859467C92A95FF8600F565E4 /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859467C82A95FF8600F565E4 /* SocialView.swift */; };
 		859467CD2A96017500F565E4 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859467CC2A96017500F565E4 /* CalenderView.swift */; };
 		859469452A9D9BCF00F565E4 /* CircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859469442A9D9BCF00F565E4 /* CircleProgressBar.swift */; };
+		859E1BB02AB9631700F8C37D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 859E1BAF2AB9631700F8C37D /* ComposableArchitecture */; };
 		85FACF082AAA9DBC0003A06F /* MainIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF072AAA9DBC0003A06F /* MainIntent.swift */; };
 		85FACF0A2AAA9DF20003A06F /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF092AAA9DF20003A06F /* MainModel.swift */; };
 		85FACF0D2AAA9FCE0003A06F /* MainContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF0C2AAA9FCE0003A06F /* MainContainer.swift */; };
 		85FACF0F2AAAA7B70003A06F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF0E2AAAA7B70003A06F /* Request.swift */; };
 		85FACF3D2AACB25D0003A06F /* RankingIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF3C2AACB25D0003A06F /* RankingIntent.swift */; };
-		85FACF422AACB5350003A06F /* SideSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF412AACB5350003A06F /* SideSheetView.swift */; };
 		85FACF482AAE91CC0003A06F /* TimePickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF472AAE91CC0003A06F /* TimePickerModel.swift */; };
-		85FACF4B2AAE91EB0003A06F /* TimePickerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF4A2AAE91EB0003A06F /* TimePickerContainer.swift */; };
-		85FACF4F2AAE920A0003A06F /* TimePickerIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF4E2AAE920A0003A06F /* TimePickerIntent.swift */; };
+		85FACF4B2AAE91EB0003A06F /* TimerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF4A2AAE91EB0003A06F /* TimerContainer.swift */; };
+		85FACF4F2AAE920A0003A06F /* TimerIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF4E2AAE920A0003A06F /* TimerIntent.swift */; };
 		85FACF532AAE93D80003A06F /* RankingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF522AAE93D80003A06F /* RankingModel.swift */; };
 		85FACF562AAE942B0003A06F /* RankingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF552AAE942B0003A06F /* RankingContainer.swift */; };
 /* End PBXBuildFile section */
@@ -42,7 +42,7 @@
 		8572D9B62AB1CCA500E70274 /* GangwonEduSaeeum-OTFMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GangwonEduSaeeum-OTFMedium.otf"; sourceTree = "<group>"; };
 		8572D9B82AB1CCF700E70274 /* Eagle-Pop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Eagle-Pop-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8572D9B92AB1CE5F00E70274 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		8572D9BB2AB1F82B00E70274 /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
+		8572D9BB2AB1F82B00E70274 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		8594679D2A95EF0C00F565E4 /* Eagle_Pop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eagle_Pop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		859467A02A95EF0C00F565E4 /* Eagle_PopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eagle_PopApp.swift; sourceTree = "<group>"; };
 		859467A42A95EF0D00F565E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,10 +60,9 @@
 		85FACF0C2AAA9FCE0003A06F /* MainContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainer.swift; sourceTree = "<group>"; };
 		85FACF0E2AAAA7B70003A06F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		85FACF3C2AACB25D0003A06F /* RankingIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingIntent.swift; sourceTree = "<group>"; };
-		85FACF412AACB5350003A06F /* SideSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideSheetView.swift; sourceTree = "<group>"; };
 		85FACF472AAE91CC0003A06F /* TimePickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerModel.swift; sourceTree = "<group>"; };
-		85FACF4A2AAE91EB0003A06F /* TimePickerContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerContainer.swift; sourceTree = "<group>"; };
-		85FACF4E2AAE920A0003A06F /* TimePickerIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerIntent.swift; sourceTree = "<group>"; };
+		85FACF4A2AAE91EB0003A06F /* TimerContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerContainer.swift; sourceTree = "<group>"; };
+		85FACF4E2AAE920A0003A06F /* TimerIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerIntent.swift; sourceTree = "<group>"; };
 		85FACF522AAE93D80003A06F /* RankingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingModel.swift; sourceTree = "<group>"; };
 		85FACF552AAE942B0003A06F /* RankingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +74,7 @@
 			files = (
 				859467BC2A95FC2200F565E4 /* OpenTDS in Frameworks */,
 				859467BF2A95FC5900F565E4 /* Alamofire in Frameworks */,
+				859E1BB02AB9631700F8C37D /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,8 +215,7 @@
 			children = (
 				859469442A9D9BCF00F565E4 /* CircleProgressBar.swift */,
 				857021DE2AA8A55B002CB09E /* UITimePickerView.swift */,
-				85FACF412AACB5350003A06F /* SideSheetView.swift */,
-				8572D9BB2AB1F82B00E70274 /* TimePickerView.swift */,
+				8572D9BB2AB1F82B00E70274 /* TimerView.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -294,7 +293,7 @@
 		85FACF492AAE91D80003A06F /* Sub */ = {
 			isa = PBXGroup;
 			children = (
-				85FACF4A2AAE91EB0003A06F /* TimePickerContainer.swift */,
+				85FACF4A2AAE91EB0003A06F /* TimerContainer.swift */,
 			);
 			path = Sub;
 			sourceTree = "<group>";
@@ -302,7 +301,7 @@
 		85FACF4D2AAE91FB0003A06F /* Sub */ = {
 			isa = PBXGroup;
 			children = (
-				85FACF4E2AAE920A0003A06F /* TimePickerIntent.swift */,
+				85FACF4E2AAE920A0003A06F /* TimerIntent.swift */,
 			);
 			path = Sub;
 			sourceTree = "<group>";
@@ -342,6 +341,7 @@
 			packageProductDependencies = (
 				859467BB2A95FC2200F565E4 /* OpenTDS */,
 				859467BE2A95FC5900F565E4 /* Alamofire */,
+				859E1BAF2AB9631700F8C37D /* ComposableArchitecture */,
 			);
 			productName = Eagle_Pop;
 			productReference = 8594679D2A95EF0C00F565E4 /* Eagle_Pop.app */;
@@ -375,6 +375,7 @@
 				859467BA2A95FC2200F565E4 /* XCRemoteSwiftPackageReference "OpenTDS" */,
 				859467BD2A95FC5900F565E4 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				857021E02AA99CEB002CB09E /* XCRemoteSwiftPackageReference "Then" */,
+				859E1BAE2AB9631700F8C37D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 8594679E2A95EF0C00F565E4 /* Products */;
 			projectDirPath = "";
@@ -410,19 +411,18 @@
 				859467CD2A96017500F565E4 /* CalenderView.swift in Sources */,
 				859467C12A95FE2F00F565E4 /* MainView.swift in Sources */,
 				859467C62A95FF2100F565E4 /* RankingView.swift in Sources */,
-				85FACF4F2AAE920A0003A06F /* TimePickerIntent.swift in Sources */,
+				85FACF4F2AAE920A0003A06F /* TimerIntent.swift in Sources */,
 				8572D9BA2AB1CE5F00E70274 /* Fonts.swift in Sources */,
 				85FACF482AAE91CC0003A06F /* TimePickerModel.swift in Sources */,
-				8572D9BC2AB1F82B00E70274 /* TimePickerView.swift in Sources */,
+				8572D9BC2AB1F82B00E70274 /* TimerView.swift in Sources */,
 				857021DF2AA8A55B002CB09E /* UITimePickerView.swift in Sources */,
-				85FACF422AACB5350003A06F /* SideSheetView.swift in Sources */,
 				859467B12A95F10700F565E4 /* SigninView.swift in Sources */,
 				85FACF0A2AAA9DF20003A06F /* MainModel.swift in Sources */,
 				85FACF532AAE93D80003A06F /* RankingModel.swift in Sources */,
 				85FACF0F2AAAA7B70003A06F /* Request.swift in Sources */,
 				85FACF0D2AAA9FCE0003A06F /* MainContainer.swift in Sources */,
 				859469452A9D9BCF00F565E4 /* CircleProgressBar.swift in Sources */,
-				85FACF4B2AAE91EB0003A06F /* TimePickerContainer.swift in Sources */,
+				85FACF4B2AAE91EB0003A06F /* TimerContainer.swift in Sources */,
 				859467A12A95EF0C00F565E4 /* Eagle_PopApp.swift in Sources */,
 				859467C92A95FF8600F565E4 /* SocialView.swift in Sources */,
 				85FACF3D2AACB25D0003A06F /* RankingIntent.swift in Sources */,
@@ -654,6 +654,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		859E1BAE2AB9631700F8C37D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -666,6 +674,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 859467BD2A95FC5900F565E4 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		859E1BAF2AB9631700F8C37D /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 859E1BAE2AB9631700F8C37D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -1,5 +1,5 @@
 //
-//  TimePickerView.swift
+//  TimerView.swift
 //  Eagle_Pop
 //
 //  Created by 최시훈 on 2023/09/04.
@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct TimePickerView: View {
+struct TimerView: View {
+    @StateObject private var container: TimerContainer<TimerIntent, TimerModelStateProtocol>
+    
     // 상태 변수
     @State private var isLabelVisible = true
     @State private var selectedTime = 25
@@ -73,5 +75,16 @@ struct TimePickerView: View {
         .onAppear {
             timer.upstream.connect().cancel()
         }
+    }
+}
+extension TimerView {
+    static func build() -> some View {
+        let model = TimerModel()
+        let intent = TimerIntent(model: model)
+        let container = TimerContainer(
+            intent: intent,
+            model: model as TimerModelStateProtocol,
+            modelChangePublisher: model.objectWillChange)
+        return TimerView(container: container)
     }
 }

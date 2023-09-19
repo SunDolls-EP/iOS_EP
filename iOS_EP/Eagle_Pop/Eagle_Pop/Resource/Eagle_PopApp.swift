@@ -11,7 +11,7 @@ import SwiftUI
 struct Eagle_PopApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView()
         }
     }
 }

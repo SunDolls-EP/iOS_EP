@@ -14,8 +14,9 @@ struct MainView: View {
     
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
+    let intent = self.container.intent
+
     var body: some View {
-        //        Color.white.ignoresSafeArea()
         
         VStack(spacing: 0) {
             
@@ -44,7 +45,6 @@ struct MainView: View {
                 
                 VStack {
                     Menu("\(container.model.menuTitle)") {
-                        let intent = self.container.intent
                         Button("일간 랭킹", action: intent.dailyRanking)
                         Button("주간 랭킹", action: intent.weeklyRanking)
                         Button("월간 랭킹", action: intent.monthlyRanking)
@@ -54,7 +54,7 @@ struct MainView: View {
                     
                     HStack {
                         Button(action: {
-                            
+                            // 추후 RankingView로 이동하는 코드 작성
                         }) {
                             ForEach([90, 110, 85], id: \.self) { size in
                                 VStack {
@@ -72,6 +72,7 @@ struct MainView: View {
                                 }
                             }
                         }
+                        .onAppear(intent.monthlyRanking)
                     }
                 }
                 .padding([.leading, .trailing], 20)
