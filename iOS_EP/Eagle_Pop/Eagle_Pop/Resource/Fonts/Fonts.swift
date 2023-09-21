@@ -7,4 +7,9 @@
 
 import Foundation
 
-let helvetica = "Helvetica Neue"
+let pretendardThin = "Pretendard-Thin"
+let pretendardLight = "Pretendard-Light"
+let pretendardMedium = "Pretendard-Medium"
+let pretendardRegular = "Pretendard-Regular"
+let pretendardSemiBold = "Pretendard-SemiBold"
+let pretendardBold = "Pretendard-Bold"
