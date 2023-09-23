@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UITimePickerView: UIViewRepresentable {
+struct CustomTimePickerView: UIViewRepresentable {
     let textField = UITextField()
     let picker = UIPickerView()
     
@@ -49,10 +49,10 @@ struct UITimePickerView: UIViewRepresentable {
     
     class Coordinator: NSObject, UIPickerViewDelegate, UIPickerViewDataSource {
         
-        let parent: UITimePickerView
+        let parent: CustomTimePickerView
         lazy var doneAction = UIAction(handler: doneButtonTapped(action:))
         
-        init(_ parent: UITimePickerView) {
+        init(_ parent: CustomTimePickerView) {
             self.parent = parent
         }
 
