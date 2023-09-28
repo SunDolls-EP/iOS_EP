@@ -16,7 +16,18 @@
 		85072C9F2ABAFE8900269B5C /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8597CA202AB9E80C00A3487E /* Pretendard-Regular.otf */; };
 		85072CA02ABAFE8900269B5C /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8597CA242AB9E80C00A3487E /* Pretendard-SemiBold.otf */; };
 		85072CA12ABAFE8900269B5C /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8597CA212AB9E80C00A3487E /* Pretendard-Thin.otf */; };
+		85072CC72ABDB7BE00269B5C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85072CC62ABDB7BE00269B5C /* ProfileView.swift */; };
+		85072CCA2ABDB81700269B5C /* MenuCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85072CC92ABDB81700269B5C /* MenuCore.swift */; };
+		8518AB072AC5A92600A4BA98 /* RankingCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8518AB062AC5A92600A4BA98 /* RankingCore.swift */; };
+		8518AB092AC5A94000A4BA98 /* RankingRouteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8518AB082AC5A94000A4BA98 /* RankingRouteBuilder.swift */; };
+		8518AB0B2AC5AE5C00A4BA98 /* PersonalRankingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8518AB0A2AC5AE5C00A4BA98 /* PersonalRankingListView.swift */; };
 		857021DF2AA8A55B002CB09E /* CustomTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857021DE2AA8A55B002CB09E /* CustomTimePickerView.swift */; };
+		857045682AC2BA6100315057 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857045672AC2BA6100315057 /* EditProfileView.swift */; };
+		8570456B2AC2D38900315057 /* LinkNavigator in Frameworks */ = {isa = PBXBuildFile; productRef = 8570456A2AC2D38900315057 /* LinkNavigator */; };
+		8570456F2AC3033600315057 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8570456E2AC3033600315057 /* AppDependency.swift */; };
+		857045712AC30BAB00315057 /* AppRouterGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857045702AC30BAB00315057 /* AppRouterGroup.swift */; };
+		857045732AC30BC300315057 /* MainRouteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857045722AC30BC300315057 /* MainRouteBuilder.swift */; };
+		857045762AC3A74E00315057 /* MainSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857045752AC3A74E00315057 /* MainSideEffect.swift */; };
 		8572D9BA2AB1CE5F00E70274 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8572D9B92AB1CE5F00E70274 /* Fonts.swift */; };
 		8572D9BC2AB1F82B00E70274 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8572D9BB2AB1F82B00E70274 /* TimerView.swift */; };
 		859467A12A95EF0C00F565E4 /* Eagle_PopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859467A02A95EF0C00F565E4 /* Eagle_PopApp.swift */; };
@@ -40,7 +51,17 @@
 
 /* Begin PBXFileReference section */
 		85072C952ABADE4E00269B5C /* client_224818744622-7ervdk2meqo3qme5s8ov003sot0goigt.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_224818744622-7ervdk2meqo3qme5s8ov003sot0goigt.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
+		85072CC62ABDB7BE00269B5C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		85072CC92ABDB81700269B5C /* MenuCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCore.swift; sourceTree = "<group>"; };
+		8518AB062AC5A92600A4BA98 /* RankingCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCore.swift; sourceTree = "<group>"; };
+		8518AB082AC5A94000A4BA98 /* RankingRouteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingRouteBuilder.swift; sourceTree = "<group>"; };
+		8518AB0A2AC5AE5C00A4BA98 /* PersonalRankingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalRankingListView.swift; sourceTree = "<group>"; };
 		857021DE2AA8A55B002CB09E /* CustomTimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimePickerView.swift; sourceTree = "<group>"; };
+		857045672AC2BA6100315057 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		8570456E2AC3033600315057 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+		857045702AC30BAB00315057 /* AppRouterGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterGroup.swift; sourceTree = "<group>"; };
+		857045722AC30BC300315057 /* MainRouteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouteBuilder.swift; sourceTree = "<group>"; };
+		857045752AC3A74E00315057 /* MainSideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSideEffect.swift; sourceTree = "<group>"; };
 		8572D9B92AB1CE5F00E70274 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		8572D9BB2AB1F82B00E70274 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		8594679D2A95EF0C00F565E4 /* Eagle_Pop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eagle_Pop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +94,7 @@
 			files = (
 				85072C9B2ABAE96A00269B5C /* GoogleSignInSwift in Frameworks */,
 				859467BC2A95FC2200F565E4 /* OpenTDS in Frameworks */,
+				8570456B2AC2D38900315057 /* LinkNavigator in Frameworks */,
 				85072C992ABAE96A00269B5C /* GoogleSignIn in Frameworks */,
 				859467BF2A95FC5900F565E4 /* Alamofire in Frameworks */,
 				859E1BB02AB9631700F8C37D /* ComposableArchitecture in Frameworks */,
@@ -88,6 +110,39 @@
 				857021DE2AA8A55B002CB09E /* CustomTimePickerView.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		85072CC52ABDB7A900269B5C /* Sub */ = {
+			isa = PBXGroup;
+			children = (
+				85072CC62ABDB7BE00269B5C /* ProfileView.swift */,
+				857045672AC2BA6100315057 /* EditProfileView.swift */,
+			);
+			path = Sub;
+			sourceTree = "<group>";
+		};
+		8570456C2AC2D42E00315057 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				857045702AC30BAB00315057 /* AppRouterGroup.swift */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		8570456D2AC3032000315057 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				8570456E2AC3033600315057 /* AppDependency.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		857045742AC30CDC00315057 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				859467AE2A95F05100F565E4 /* TabView.swift */,
+			);
+			path = TabView;
 			sourceTree = "<group>";
 		};
 		8572D9B52AB1CC5000E70274 /* Fonts */ = {
@@ -141,10 +196,15 @@
 		859467B62A95F71400F565E4 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				859467B82A95F91700F565E4 /* LaunchScreen */,
-				8597CA162AB96C8B00A3487E /* Core */,
+				8570456D2AC3032000315057 /* Navigator */,
+				8570456C2AC2D42E00315057 /* Dependency */,
 				85072CA32ABB412400269B5C /* Component */,
-				859467B92A95FB1B00F565E4 /* View */,
+				857045742AC30CDC00315057 /* TabView */,
+				859467C32A95FE5200F565E4 /* Signin */,
+				859467C22A95FE3500F565E4 /* Main */,
+				859467C72A95FF3B00F565E4 /* Social */,
+				859467C42A95FE7200F565E4 /* Ranking */,
+				859467CB2A96014400F565E4 /* Menu */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -152,6 +212,7 @@
 		859467B72A95F77400F565E4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				859467B82A95F91700F565E4 /* LaunchScreen */,
 				85072C952ABADE4E00269B5C /* client_224818744622-7ervdk2meqo3qme5s8ov003sot0goigt.apps.googleusercontent.com.plist */,
 				8597CA2F2ABA002F00A3487E /* Eagle-Pop-Info.plist */,
 				859467A42A95EF0D00F565E4 /* Assets.xcassets */,
@@ -170,23 +231,13 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
-		859467B92A95FB1B00F565E4 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				859467AE2A95F05100F565E4 /* TabView.swift */,
-				859467C32A95FE5200F565E4 /* Signin */,
-				859467C22A95FE3500F565E4 /* Main */,
-				859467C72A95FF3B00F565E4 /* Social */,
-				859467C42A95FE7200F565E4 /* Ranking */,
-				859467CB2A96014400F565E4 /* Menu */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		859467C22A95FE3500F565E4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				859467C02A95FE2F00F565E4 /* MainView.swift */,
+				8597CA292AB9FEA300A3487E /* MainCore.swift */,
+				857045722AC30BC300315057 /* MainRouteBuilder.swift */,
+				857045752AC3A74E00315057 /* MainSideEffect.swift */,
 				85FACF042AAA9B4D0003A06F /* SubView */,
 			);
 			path = Main;
@@ -204,6 +255,9 @@
 			isa = PBXGroup;
 			children = (
 				859467C52A95FF2100F565E4 /* RankingView.swift */,
+				8518AB062AC5A92600A4BA98 /* RankingCore.swift */,
+				8518AB082AC5A94000A4BA98 /* RankingRouteBuilder.swift */,
+				8518AB0A2AC5AE5C00A4BA98 /* PersonalRankingListView.swift */,
 			);
 			path = Ranking;
 			sourceTree = "<group>";
@@ -220,24 +274,10 @@
 			isa = PBXGroup;
 			children = (
 				859467CC2A96017500F565E4 /* MenuView.swift */,
+				85072CC92ABDB81700269B5C /* MenuCore.swift */,
+				85072CC52ABDB7A900269B5C /* Sub */,
 			);
 			path = Menu;
-			sourceTree = "<group>";
-		};
-		8597CA162AB96C8B00A3487E /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				8597CA282AB9FE9400A3487E /* Main */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		8597CA282AB9FE9400A3487E /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				8597CA292AB9FEA300A3487E /* MainCore.swift */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		85FACF042AAA9B4D0003A06F /* SubView */ = {
@@ -271,6 +311,7 @@
 				859E1BAF2AB9631700F8C37D /* ComposableArchitecture */,
 				85072C982ABAE96A00269B5C /* GoogleSignIn */,
 				85072C9A2ABAE96A00269B5C /* GoogleSignInSwift */,
+				8570456A2AC2D38900315057 /* LinkNavigator */,
 			);
 			productName = Eagle_Pop;
 			productReference = 8594679D2A95EF0C00F565E4 /* Eagle_Pop.app */;
@@ -306,6 +347,7 @@
 				857021E02AA99CEB002CB09E /* XCRemoteSwiftPackageReference "Then" */,
 				859E1BAE2AB9631700F8C37D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				85072C972ABAE96A00269B5C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				857045692AC2D38900315057 /* XCRemoteSwiftPackageReference "LinkNavigator" */,
 			);
 			productRefGroup = 8594679E2A95EF0C00F565E4 /* Products */;
 			projectDirPath = "";
@@ -343,17 +385,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				859467AF2A95F05100F565E4 /* TabView.swift in Sources */,
+				857045682AC2BA6100315057 /* EditProfileView.swift in Sources */,
 				859467CD2A96017500F565E4 /* MenuView.swift in Sources */,
 				859467C12A95FE2F00F565E4 /* MainView.swift in Sources */,
 				859467C62A95FF2100F565E4 /* RankingView.swift in Sources */,
+				8518AB0B2AC5AE5C00A4BA98 /* PersonalRankingListView.swift in Sources */,
 				8572D9BA2AB1CE5F00E70274 /* Fonts.swift in Sources */,
+				8518AB092AC5A94000A4BA98 /* RankingRouteBuilder.swift in Sources */,
+				8570456F2AC3033600315057 /* AppDependency.swift in Sources */,
 				8572D9BC2AB1F82B00E70274 /* TimerView.swift in Sources */,
+				85072CCA2ABDB81700269B5C /* MenuCore.swift in Sources */,
+				85072CC72ABDB7BE00269B5C /* ProfileView.swift in Sources */,
+				8518AB072AC5A92600A4BA98 /* RankingCore.swift in Sources */,
 				857021DF2AA8A55B002CB09E /* CustomTimePickerView.swift in Sources */,
 				859467B12A95F10700F565E4 /* SigninView.swift in Sources */,
 				8597CA2A2AB9FEA300A3487E /* MainCore.swift in Sources */,
 				85FACF0F2AAAA7B70003A06F /* Request.swift in Sources */,
+				857045732AC30BC300315057 /* MainRouteBuilder.swift in Sources */,
 				859469452A9D9BCF00F565E4 /* CircleProgressBar.swift in Sources */,
 				859467A12A95EF0C00F565E4 /* Eagle_PopApp.swift in Sources */,
+				857045712AC30BAB00315057 /* AppRouterGroup.swift in Sources */,
+				857045762AC3A74E00315057 /* MainSideEffect.swift in Sources */,
 				859467C92A95FF8600F565E4 /* SocialView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +629,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		857045692AC2D38900315057 /* XCRemoteSwiftPackageReference "LinkNavigator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/interactord/LinkNavigator.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.9;
+			};
+		};
 		859467BA2A95FC2200F565E4 /* XCRemoteSwiftPackageReference "OpenTDS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Mercen-Lee/OpenTDS.git";
@@ -613,6 +673,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 85072C972ABAE96A00269B5C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+		};
+		8570456A2AC2D38900315057 /* LinkNavigator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 857045692AC2D38900315057 /* XCRemoteSwiftPackageReference "LinkNavigator" */;
+			productName = LinkNavigator;
 		};
 		859467BB2A95FC2200F565E4 /* OpenTDS */ = {
 			isa = XCSwiftPackageProductDependency;
