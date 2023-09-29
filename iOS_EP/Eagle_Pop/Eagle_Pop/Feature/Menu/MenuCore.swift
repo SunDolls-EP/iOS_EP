@@ -15,7 +15,7 @@ struct MenuCore: Reducer {
         var studyTime: String = "00:00"
         var affiliated: String = "대구소프트웨어마이스터고등학교"
     }
-
+    
     enum MenuAction: Equatable {
         case getMemberInfo
         case getAffiliated
@@ -23,8 +23,9 @@ struct MenuCore: Reducer {
         case selectDailyStudyTime
         case selectWeeklyStudyTime
         case selectMonthlyStudyTime
+        case saveModifiedInfo
     }
-
+    
     func reduce(into state: inout MenuState, action: MenuAction) -> Effect<MenuAction> {
         switch action {
         case .getMemberInfo:
@@ -41,15 +42,17 @@ struct MenuCore: Reducer {
         case .selectDailyStudyTime:
             state.menuTitle = "오늘 공부한 시간"
             return .none
-
+            
         case .selectWeeklyStudyTime:
             state.menuTitle = "이번 주 공부한 시간"
             return .none
-
+            
         case .selectMonthlyStudyTime:
             state.menuTitle = "이번 달 공부한 시간"
             return .none
+        case .saveModifiedInfo:
+//            Requests.request(<#T##url: String##String#>, <#T##method: HTTPMethod##HTTPMethod#>, <#T##model: (Decodable & Encodable).Protocol##(Decodable & Encodable).Protocol#>, completion: <#T##(Decodable & Encodable) -> Void#>)
+            return .none
         }
     }
-    
 }
