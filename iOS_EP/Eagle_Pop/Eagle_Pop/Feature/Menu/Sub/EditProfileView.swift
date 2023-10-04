@@ -24,16 +24,20 @@ struct EditProfileView: View {
                     .frame(alignment: .center)
                     .cornerRadius(30)
             }
-            .navigationBarTitle(Text("Hello, SwiftUI!"), displayMode: .inline)
-
+            .navigationBarTitle(Text("Eagle Pop"), displayMode: .inline)
+            .navigationBarItems(leading: Button(action: {
+                store.send(.saveModifiedInfo)
+            }, label: {
+                Text("저장하기")
+                    .foregroundColor(.blue)
+            })
+            )
         }
     }
 }
 
-struct EditProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        EditProfileView(store: Store(initialState:  MenuCore.State()) {
-            MenuCore()})
-    }
+#Preview {
+    EditProfileView(store: Store(initialState:  MenuCore.State()) {
+        MenuCore()})
 }
 
