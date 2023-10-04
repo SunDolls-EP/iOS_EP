@@ -20,7 +20,7 @@ struct MainView: View {
             NavigationView {
                     ScrollView {
                         VStack(spacing: 18) {
-                            TimerView()
+                            TimerView(store: Store(initialState: MainCore.State()) { MainCore() })
                                 .frame(alignment: .center)
                                 .padding(.top, 26)
                                 .padding(.bottom, 26)
@@ -42,21 +42,29 @@ struct MainView: View {
                                     Button(action: {
                                         // 추후 RankingView로 이동하는 코드 작성
                                     }) {
-                                        ForEach([90, 110, 85], id: \.self) { size in
+                                        let sizes = [90, 110, 85]
+                                        let names = ["황주완", "최시훈", "이혜성"]
+                                        ForEach(0..<sizes.count, id: \.self) { index in
+                                            let size = sizes[index]
+                                            let name = names[index]
+                                            
                                             VStack {
                                                 Image(systemName: "person.fill")
                                                     .resizable()
                                                     .foregroundColor(.gray)
-                                                    .background(.black)
+                                                    .background(Color.black)
                                                     .frame(width: CGFloat(size), height: CGFloat(size))
                                                     .cornerRadius(CGFloat(size) / 2)
                                                     .font(.headline)
-                                                    .frame(width: size != 110 ? 90 : .none)
-                                                Text("최시훈")
-                                                    .font(.custom(pretendardMedium, size: size == 110 ? 30 : 25))
+                                                    .frame(width: size != 110 ? 90 : nil)
+                                                
+                                                Text(name)
+                                                    .font(.custom("pretendardMedium", size: size == 110 ? 30 : 25))
                                                     .foregroundColor(.black)
                                             }
+                                            
                                         }
+                                        
                                     }
                                     .onAppear() {
                                         
@@ -72,7 +80,7 @@ struct MainView: View {
                         .padding(.top, 10)
                         .frame(maxWidth: .infinity)
                     }
-                    .navigationBarTitle(Text("Hello, SwiftUI!"), displayMode: .inline)
+                    .navigationBarTitle(Text("Eagle Pop"), displayMode: .inline)
                     .background(TossColor.background.ignoresSafeArea())
             }
         }
