@@ -24,11 +24,10 @@ public struct MainSideEffectLive {
   }
 }
 extension MainSideEffectLive: MainSideEffect {
-    
     public var routeToPage2: () -> Void {
-      {
-        navigator.next(paths: ["page2"], items: [:], isAnimated: true)
-      }
+        {
+          navigator.next(paths: [""], items: [:], isAnimated: true)
+        }
     }
     
     public var getPaths: () -> [String] {

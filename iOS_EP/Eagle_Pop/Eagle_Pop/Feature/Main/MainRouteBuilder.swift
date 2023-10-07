@@ -9,18 +9,23 @@ import LinkNavigator
 import SwiftUI
 
 struct MainRouteBuilder: RouteBuilder {
-  var matchPath: String { "main" }
-
-  var build: (LinkNavigatorType, [String: String], DependencyType) -> MatchingViewController? {
-    { _, _, _ in
-      WrappingController(matchPath: matchPath) {
-        MainView(
-          store: .init(
-            initialState: MainCore.State(),
-            reducer: {
-                MainCore()
-            }))
+    var matchPath: String { "main" }
+    
+    var build: (LinkNavigatorType, [String: String], DependencyType) -> MatchingViewController? {
+      { _, items, _ in
+        WrappingController(matchPath: matchPath) {
+            MainView(
+            store: .init(
+              initialState: MainCore.MainState(message: items.getValue(key: "page4-message") ?? ""),
+              reducer: {
+                  MainCore()
+              }))
+        }
       }
     }
+}
+extension [String: String] {
+  fileprivate func getValue(key: String) -> String? {
+    first(where: { $0.key == key })?.value as? String
   }
 }
