@@ -10,6 +10,7 @@ import UIKit
 struct PersonalRankingInfo: Hashable, Identifiable {
     let id = UUID()
     let rank: Int
+    let image: String
     let name: String
     let group: String
     let studyTime: String
@@ -31,7 +32,6 @@ struct GroupRankingInfo: Hashable, Identifiable {
 
 struct GroupRankingArray: Hashable,Identifiable {
     let id = UUID()
-    let title: String
     let groupRankingInfo: [GroupRankingInfo]
 }
 
