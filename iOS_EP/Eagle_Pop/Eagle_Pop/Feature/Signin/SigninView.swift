@@ -6,26 +6,81 @@
 //
 
 import SwiftUI
+import GoogleSignIn
 import GoogleSignInSwift
+import ComposableArchitecture
 
 struct SigninView: View {
+    let store: StoreOf<SigninCore>
+    
+    var signinButtonHeight: CGFloat = 55
+    
+    
     var body: some View {
-        VStack {
+        WithViewStore(self.store, observe: { $0 }) { viewStore in
             Image("MainLogo")
-                .frame(alignment: .center)
-                .padding([.leading, .trailing], 65)
-            
-        }
-        Text("명언")
-            .font(.system(size: 30, weight: .semibold))
-//        GoogleSignInButton
-//        Button("카카오톡으로 로그인하기") { <#T##() -> Void#>}
+                .frame(height: 200)
+                .padding(.horizontal, 0)
+                .padding(.top, 75)
+            Text("\(viewStore.quote)")
+                .font(.custom(pretendardMedium, size: 25))
+                .padding(.top, 10)
+            Spacer()
+            VStack(spacing: 15) {
+                Button {
+                    viewStore.send(.selectSignin)
+                    
+                } label: {
+                    HStack(spacing: 50) {
+                        Image("developerInfo")
+                            .frame(alignment: .leading)
+                            .padding(.leading, 20)
+                        Text("google로 로그인하기")
+                            .font(.custom(pretendardBold, size: 14.47))
 
-        
+                        Spacer()
+                    }
+                }
+                .frame(width: 325.5,height: signinButtonHeight)
+                .background(.white)
+                .cornerRadius(signinButtonHeight/2)
+                .buttonStyle(CustomButtonStroke())
+                .padding(.top, 0)
+                
+                
+                
+                Button {
+                    viewStore.send(.selectSignin)
+                } label: {
+                    HStack(spacing: 50) {
+                        Image("developerInfo")
+                            .frame(alignment: .leading)
+                            .padding(.leading, 20)
+                        Text("카카오로 로그인하기")
+                            .font(.custom(pretendardBold, size: 14.47))
+                            .padding(.leading, 5)
+                        Spacer()
+
+                    }
+                }
+                .frame(width: 325.5, height: signinButtonHeight)
+                .background(Color(red: 1, green: 0.9, blue: 0))
+                .cornerRadius(signinButtonHeight/2)
+                .buttonStyle(CustomButtonStroke())
+
+
+
+                
+                Text("-로그인 방식을 선택해주세요-")
+                    .font(.custom(pretendardLight, size: 18))
+            }
+            .padding(.top, 0)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
     }
 }
 
 #Preview {
-
-        SigninView()
+    SigninView(store: Store(initialState: SigninCore.State()) {
+        SigninCore()})
 }
