@@ -22,7 +22,8 @@ struct CustomTimePickerView: UIViewRepresentable {
         self.textField.font = .systemFont(ofSize: 28)
         self.textField.textAlignment = .center
         self.textField.adjustsFontSizeToFitWidth = true
-        
+        self.textField.isEnabled = true
+
         
         let toolbar = UIToolbar()
         let doneBtn = UIBarButtonItem(title: "완료", image: nil, primaryAction: context.coordinator.doneAction)
