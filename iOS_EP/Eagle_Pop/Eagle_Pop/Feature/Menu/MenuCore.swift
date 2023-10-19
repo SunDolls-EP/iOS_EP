@@ -12,7 +12,7 @@ struct MenuCore: Reducer {
     struct MenuState: Equatable {
         var memberName: String = "최시훈"
         var menuTitle: String = "이번 주 공부한 시간"
-        var studyTime: String = "00:00"
+        var studyTime: String = "01:53"
         var affiliated: String = "대구소프트웨어마이스터고등학교"
     }
     
@@ -24,8 +24,11 @@ struct MenuCore: Reducer {
         case selectWeeklyStudyTime
         case selectMonthlyStudyTime
         case saveModifiedInfo
+        case selectAppInfo(title: String)
     }
     
+//    @Dependency(\.sideEffect.menu) var sideEffect
+
     func reduce(into state: inout MenuState, action: MenuAction) -> Effect<MenuAction> {
         switch action {
         case .getMemberInfo:
@@ -51,7 +54,21 @@ struct MenuCore: Reducer {
             state.menuTitle = "이번 달 공부한 시간"
             return .none
         case .saveModifiedInfo:
-//            Requests.request(<#T##url: String##String#>, <#T##method: HTTPMethod##HTTPMethod#>, <#T##model: (Decodable & Encodable).Protocol##(Decodable & Encodable).Protocol#>, completion: <#T##(Decodable & Encodable) -> Void#>)
+            
+            return .none
+        case .selectAppInfo(let title):
+            switch title {
+            case "오픈소스 라이선스":
+                print("오픈소스 라이선스 버튼을 눌렀습니다.")
+            case "개발자 정보":
+                print("개발자 정보 버튼을 눌렀습니다.")
+            case "버전 정보":
+                print("버전 정보 버튼을 눌렀습니다.")
+            case "로그아웃":
+                print("로그아웃 버튼을 눌렀습니다.")
+            default:
+                break
+            }
             return .none
         }
     }
