@@ -11,7 +11,12 @@ struct AppRouterGroup {
   var routers: [RouteBuilder] {
     [
         RootTabRouteBuilder(),
-      MainRouteBuilder()
+        SigninRouteBuilder(),
+        MainRouteBuilder(),
+        SocialRouteBuilder(),
+        RankingRouteBuilder(),
+        MenuRouteBuilder(),
+        AppInfoRouteBuilder()
       
     ]
   }

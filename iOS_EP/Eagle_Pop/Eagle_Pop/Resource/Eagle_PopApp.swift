@@ -6,12 +6,27 @@
 //
 
 import SwiftUI
+import LinkNavigator
+import ComposableArchitecture
 
 @main
 struct Eagle_PopApp: App {
+    @Dependency(\.sideEffect) var sideEffect
+    
+    
+    // MARK: App
+    var navigator: LinkNavigator {
+        sideEffect.linkNavigator as! LinkNavigator
+    }
+    @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+    
+    
     var body: some Scene {
         WindowGroup {
-            TabView()
+            navigator
+                .launch(paths: ["signin"],
+                        items: [:])
+                .ignoresSafeArea(edges: .vertical)
         }
     }
 }
