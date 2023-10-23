@@ -37,17 +37,14 @@ struct SigninView: View {
                             .padding(.leading, 20)
                         Text("google로 로그인하기")
                             .font(.custom(pretendardBold, size: 14.47))
-
                         Spacer()
                     }
                 }
                 .frame(width: 325.5,height: signinButtonHeight)
                 .background(.white)
                 .cornerRadius(signinButtonHeight/2)
-                .buttonStyle(CustomButtonStroke())
+                .buttonStyle(CustomButtonStyle())
                 .padding(.top, 0)
-                
-                
                 
                 Button {
                     viewStore.send(.selectSignin)
@@ -66,13 +63,10 @@ struct SigninView: View {
                 .frame(width: 325.5, height: signinButtonHeight)
                 .background(Color(red: 1, green: 0.9, blue: 0))
                 .cornerRadius(signinButtonHeight/2)
-                .buttonStyle(CustomButtonStroke())
-
-
-
+                .buttonStyle(CustomButtonStyle())
                 
                 Text("-로그인 방식을 선택해주세요-")
-                    .font(.custom(pretendardLight, size: 18))
+                    .font(.custom(pretendardMedium, size: 15))
             }
             .padding(.top, 0)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
