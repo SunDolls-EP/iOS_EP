@@ -34,6 +34,14 @@
 		854A909D2ACE3DB600AEA6CF /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854A909C2ACE3DB600AEA6CF /* AppInfo.swift */; };
 		854A90A42ACEDE1F00AEA6CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854A90A32ACEDE1F00AEA6CF /* AppDelegate.swift */; };
 		854A90A62ACF144500AEA6CF /* RootTabRouteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854A90A52ACF144500AEA6CF /* RootTabRouteBuilder.swift */; };
+		855396332AE7801F00575932 /* OpenSourceRouteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855396322AE7801F00575932 /* OpenSourceRouteBuilder.swift */; };
+		855396362AE7809C00575932 /* OpenSourceSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855396352AE7809C00575932 /* OpenSourceSideEffect.swift */; };
+		8553963A2AE7815000575932 /* DeveloperInfoRouteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855396382AE7815000575932 /* DeveloperInfoRouteBuilder.swift */; };
+		8553963B2AE7815000575932 /* DeveloperInfoSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855396392AE7815000575932 /* DeveloperInfoSideEffect.swift */; };
+		8553963F2AE781F600575932 /* VersionInfoRouteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8553963E2AE781F600575932 /* VersionInfoRouteBuilder.swift */; };
+		855396402AE781F600575932 /* VersionInfoSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8553963D2AE781F600575932 /* VersionInfoSideEffect.swift */; };
+		855396422AE78CAE00575932 /* VersionInfoCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855396412AE78CAE00575932 /* VersionInfoCore.swift */; };
+		855396442AE78CB000575932 /* DeveloperInfoCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855396432AE78CB000575932 /* DeveloperInfoCore.swift */; };
 		855632012AC5E36200C12B12 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855632002AC5E36200C12B12 /* Launch Screen.storyboard */; };
 		856C73AB2ADB52F6004CBC9C /* SigninCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C73AA2ADB52F6004CBC9C /* SigninCore.swift */; };
 		856C73AD2ADD11C1004CBC9C /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C73AC2ADD11C1004CBC9C /* CustomButtonStyle.swift */; };
@@ -74,8 +82,8 @@
 		8598B8612AE2E2FC005D52D9 /* AppInfoCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598B8602AE2E2FC005D52D9 /* AppInfoCore.swift */; };
 		8598B8642AE2E3CE005D52D9 /* AppInfoRouterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598B8632AE2E3CE005D52D9 /* AppInfoRouterBuilder.swift */; };
 		8598B8652AE2E3CE005D52D9 /* AppInfoSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598B8622AE2E3CE005D52D9 /* AppInfoSideEffect.swift */; };
-		8598B8672AE2EDF4005D52D9 /* AppInfoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598B8662AE2EDF4005D52D9 /* AppInfoContainerView.swift */; };
 		859E1BB02AB9631700F8C37D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 859E1BAF2AB9631700F8C37D /* ComposableArchitecture */; settings = {ATTRIBUTES = (Required, ); }; };
+		85CC87F12AE78F9A00846A9B /* OpenSoruceCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CC87F02AE78F9A00846A9B /* OpenSoruceCore.swift */; };
 		85FACF0F2AAAA7B70003A06F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF0E2AAAA7B70003A06F /* Request.swift */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +107,14 @@
 		854A909C2ACE3DB600AEA6CF /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		854A90A32ACEDE1F00AEA6CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		854A90A52ACF144500AEA6CF /* RootTabRouteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabRouteBuilder.swift; sourceTree = "<group>"; };
+		855396322AE7801F00575932 /* OpenSourceRouteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSourceRouteBuilder.swift; sourceTree = "<group>"; };
+		855396352AE7809C00575932 /* OpenSourceSideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSourceSideEffect.swift; sourceTree = "<group>"; };
+		855396382AE7815000575932 /* DeveloperInfoRouteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperInfoRouteBuilder.swift; sourceTree = "<group>"; };
+		855396392AE7815000575932 /* DeveloperInfoSideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperInfoSideEffect.swift; sourceTree = "<group>"; };
+		8553963D2AE781F600575932 /* VersionInfoSideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionInfoSideEffect.swift; sourceTree = "<group>"; };
+		8553963E2AE781F600575932 /* VersionInfoRouteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionInfoRouteBuilder.swift; sourceTree = "<group>"; };
+		855396412AE78CAE00575932 /* VersionInfoCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VersionInfoCore.swift; path = ../OpenSoruce/VersionInfoCore.swift; sourceTree = "<group>"; };
+		855396432AE78CB000575932 /* DeveloperInfoCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperInfoCore.swift; sourceTree = "<group>"; };
 		855632002AC5E36200C12B12 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		856C73AA2ADB52F6004CBC9C /* SigninCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninCore.swift; sourceTree = "<group>"; };
 		856C73AC2ADD11C1004CBC9C /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
@@ -143,7 +159,7 @@
 		8598B8602AE2E2FC005D52D9 /* AppInfoCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoCore.swift; sourceTree = "<group>"; };
 		8598B8622AE2E3CE005D52D9 /* AppInfoSideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoSideEffect.swift; sourceTree = "<group>"; };
 		8598B8632AE2E3CE005D52D9 /* AppInfoRouterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoRouterBuilder.swift; sourceTree = "<group>"; };
-		8598B8662AE2EDF4005D52D9 /* AppInfoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoContainerView.swift; sourceTree = "<group>"; };
+		85CC87F02AE78F9A00846A9B /* OpenSoruceCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSoruceCore.swift; sourceTree = "<group>"; };
 		85FACF0E2AAAA7B70003A06F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,23 +213,47 @@
 			children = (
 				85300D442ACB1EC1009AC322 /* AppInfoView.swift */,
 				8598B8602AE2E2FC005D52D9 /* AppInfoCore.swift */,
-				854A909C2ACE3DB600AEA6CF /* AppInfo.swift */,
 				8598B8622AE2E3CE005D52D9 /* AppInfoSideEffect.swift */,
 				8598B8632AE2E3CE005D52D9 /* AppInfoRouterBuilder.swift */,
-				8598B8662AE2EDF4005D52D9 /* AppInfoContainerView.swift */,
-				853C602B2AD69C5000ACD89A /* Sub */,
+				854A909C2ACE3DB600AEA6CF /* AppInfo.swift */,
+				855396302AE77FD200575932 /* OpenSoruce */,
+				855396372AE7814200575932 /* DeveloperInfo */,
+				8553963C2AE781DB00575932 /* VersionInfo */,
 			);
 			path = AppInfo;
 			sourceTree = "<group>";
 		};
-		853C602B2AD69C5000ACD89A /* Sub */ = {
+		855396302AE77FD200575932 /* OpenSoruce */ = {
 			isa = PBXGroup;
 			children = (
 				853C602C2AD69C5D00ACD89A /* OpenSourceView.swift */,
-				853C602E2AD69C7C00ACD89A /* DeveloperInfoView.swift */,
-				853C60302AD69CB000ACD89A /* VersionInfoView.swift */,
+				85CC87F02AE78F9A00846A9B /* OpenSoruceCore.swift */,
+				855396322AE7801F00575932 /* OpenSourceRouteBuilder.swift */,
+				855396352AE7809C00575932 /* OpenSourceSideEffect.swift */,
 			);
-			path = Sub;
+			path = OpenSoruce;
+			sourceTree = "<group>";
+		};
+		855396372AE7814200575932 /* DeveloperInfo */ = {
+			isa = PBXGroup;
+			children = (
+				853C602E2AD69C7C00ACD89A /* DeveloperInfoView.swift */,
+				855396432AE78CB000575932 /* DeveloperInfoCore.swift */,
+				855396382AE7815000575932 /* DeveloperInfoRouteBuilder.swift */,
+				855396392AE7815000575932 /* DeveloperInfoSideEffect.swift */,
+			);
+			path = DeveloperInfo;
+			sourceTree = "<group>";
+		};
+		8553963C2AE781DB00575932 /* VersionInfo */ = {
+			isa = PBXGroup;
+			children = (
+				853C60302AD69CB000ACD89A /* VersionInfoView.swift */,
+				855396412AE78CAE00575932 /* VersionInfoCore.swift */,
+				8553963E2AE781F600575932 /* VersionInfoRouteBuilder.swift */,
+				8553963D2AE781F600575932 /* VersionInfoSideEffect.swift */,
+			);
+			path = VersionInfo;
 			sourceTree = "<group>";
 		};
 		8570456C2AC2D42E00315057 /* Dependency */ = {
@@ -508,20 +548,24 @@
 				853C602D2AD69C5D00ACD89A /* OpenSourceView.swift in Sources */,
 				859467AF2A95F05100F565E4 /* RootTabView.swift in Sources */,
 				856C74142ADFC456004CBC9C /* Token.swift in Sources */,
-				8598B8672AE2EDF4005D52D9 /* AppInfoContainerView.swift in Sources */,
+				85CC87F12AE78F9A00846A9B /* OpenSoruceCore.swift in Sources */,
 				856C74162ADFC7C7004CBC9C /* API.swift in Sources */,
 				8598B8332ADFD799005D52D9 /* SigninRouteBuilder.swift in Sources */,
 				856C73AB2ADB52F6004CBC9C /* SigninCore.swift in Sources */,
 				853C602F2AD69C7C00ACD89A /* DeveloperInfoView.swift in Sources */,
 				856C74182ADFCC43004CBC9C /* SigninModel.swift in Sources */,
 				8598B8372ADFD834005D52D9 /* SocialRouteBuilder.swift in Sources */,
+				855396402AE781F600575932 /* VersionInfoSideEffect.swift in Sources */,
 				854A90972ACDB41800AEA6CF /* SocialListView.swift in Sources */,
 				857045682AC2BA6100315057 /* EditProfileView.swift in Sources */,
+				8553963F2AE781F600575932 /* VersionInfoRouteBuilder.swift in Sources */,
 				8598B83D2ADFF11F005D52D9 /* MainRouteBuilder.swift in Sources */,
 				85300D4B2ACC359B009AC322 /* RankingInfo.swift in Sources */,
 				854A909D2ACE3DB600AEA6CF /* AppInfo.swift in Sources */,
 				859467CD2A96017500F565E4 /* MenuView.swift in Sources */,
+				8553963A2AE7815000575932 /* DeveloperInfoRouteBuilder.swift in Sources */,
 				853C60352AD6B3E100ACD89A /* MenuRouterBuilder.swift in Sources */,
+				855396422AE78CAE00575932 /* VersionInfoCore.swift in Sources */,
 				859467C12A95FE2F00F565E4 /* MainView.swift in Sources */,
 				859467C62A95FF2100F565E4 /* RankingView.swift in Sources */,
 				8572D9BA2AB1CE5F00E70274 /* Fonts.swift in Sources */,
@@ -533,12 +577,14 @@
 				8572D9BC2AB1F82B00E70274 /* TimerView.swift in Sources */,
 				8598B8392ADFD857005D52D9 /* SocialSideEffect.swift in Sources */,
 				85072CCA2ABDB81700269B5C /* MenuCore.swift in Sources */,
+				8553963B2AE7815000575932 /* DeveloperInfoSideEffect.swift in Sources */,
 				85072CC72ABDB7BE00269B5C /* ProfileView.swift in Sources */,
 				85300D452ACB1EC1009AC322 /* AppInfoView.swift in Sources */,
 				8518AB072AC5A92600A4BA98 /* RankingCore.swift in Sources */,
 				857021DF2AA8A55B002CB09E /* CustomTimePickerView.swift in Sources */,
 				854A90992ACDBE2700AEA6CF /* SerchListModel.swift in Sources */,
 				854A909B2ACDE2E300AEA6CF /* getData.swift in Sources */,
+				855396442AE78CB000575932 /* DeveloperInfoCore.swift in Sources */,
 				8598B8452AE0B75A005D52D9 /* RootTabSideEffect.swift in Sources */,
 				8598B83C2ADFF11F005D52D9 /* MainSideEffect.swift in Sources */,
 				8598B8352ADFD7F5005D52D9 /* SigninSideEffect.swift in Sources */,
@@ -553,10 +599,12 @@
 				854A90A62ACF144500AEA6CF /* RootTabRouteBuilder.swift in Sources */,
 				853C60312AD69CB000ACD89A /* VersionInfoView.swift in Sources */,
 				853C60372AD6B7AE00ACD89A /* AppSideEffect.swift in Sources */,
+				855396362AE7809C00575932 /* OpenSourceSideEffect.swift in Sources */,
 				8598B8642AE2E3CE005D52D9 /* AppInfoRouterBuilder.swift in Sources */,
 				857045762AC3A74E00315057 /* MenuSideEffect.swift in Sources */,
 				856C73AD2ADD11C1004CBC9C /* CustomButtonStyle.swift in Sources */,
 				8598B8412ADFF299005D52D9 /* RankingEffect.swift in Sources */,
+				855396332AE7801F00575932 /* OpenSourceRouteBuilder.swift in Sources */,
 				859467C92A95FF8600F565E4 /* SocialView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
