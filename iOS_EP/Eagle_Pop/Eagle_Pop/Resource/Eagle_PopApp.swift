@@ -26,7 +26,7 @@ struct Eagle_PopApp: App {
             navigator
                 .launch(paths: ["signin"],
                         items: [:])
-                .ignoresSafeArea(edges: .vertical)
+                .ignoresSafeArea(edges: .all)
         }
     }
 }

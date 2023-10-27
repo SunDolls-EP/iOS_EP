@@ -49,6 +49,7 @@ struct SigninCore: Reducer {
 //                
 //                let idToken = String(signInResult.user.idToken!.tokenString)
 //                print(idToken)
+//
 //                
 //                signInResult.user.refreshTokensIfNeeded { user, error in
 //                    guard error == nil else {
@@ -58,8 +59,7 @@ struct SigninCore: Reducer {
 //                    }
 //                    guard let user = user else { return }
 //                    
-//                    let url = "\(api)/login/oauth2/authorize/google"
-//                    let headers = ["Authorization": idToken]
+//                    let url = "\(api)/auth/login/oauth2/google"
 //                    AF.request(url, method: .get, headers: ["Authorization": idToken])
 //                        .validate()
 //                        .responseDecodable(of: SigninModel.self) { response in

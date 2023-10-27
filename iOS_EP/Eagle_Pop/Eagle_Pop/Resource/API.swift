@@ -7,4 +7,4 @@
 
 import Foundation
 
-let api = "https://dgswhs.gabia.io"
+let api = "http://dgswhs.gabia.io/api"

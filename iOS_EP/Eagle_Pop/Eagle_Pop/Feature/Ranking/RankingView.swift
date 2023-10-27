@@ -55,25 +55,33 @@ struct RankingView: View {
                         .cornerRadius(20)
                     }
                     .ignoresSafeArea()
-                    RankingListView()
+                    RankingListView(store: Store(initialState: RankingCore.State()) {
+                        RankingCore()
+                    })
                 }
-                .padding(.horizontal, 0)
-                .padding(.bottom, 80)
-                .frame(maxHeight: .infinity)
-                .ignoresSafeArea(edges: .bottom)
-                .background(TossColor.background.ignoresSafeArea())
-                .navigationBarTitle("Rank", displayMode: .large)
+                .navigationBarTitle("Ranking", displayMode: .large)
+                .onAppear {
+                    viewStore.send(.getPersonalRankingInfo)
+                    viewStore.send(.getGroupRankingInfo)
+                }
                 .refreshable{
-                    func getSomeData() async {
-                        await Task.sleep(3_000_000_000)
-                    }
+                        viewStore.send(.getPersonalRankingInfo)
+                        viewStore.send(.getGroupRankingInfo)
                 }
+                
             }
+            .padding(.horizontal, 0)
+            .padding(.bottom, 80)
+            .frame(maxHeight: .infinity)
+            .ignoresSafeArea(edges: .bottom)
+            .background(TossColor.background.ignoresSafeArea())
         }
     }
 }
 
+
 #Preview {
     RankingView(store: Store(initialState: RankingCore.State()) {
         RankingCore()
-    })}
+    })
+}

@@ -12,7 +12,7 @@ class Requests {
     static func simple(_ url: String,
                        _ method: HTTPMethod,
                        params: [String: Any]? = nil,
-                       completion: @escaping () -> Void) {
+                       completion: @escaping (Data?) -> Void) {
         AF.request(url,
                    method: method,
                    parameters: params,
@@ -22,10 +22,10 @@ class Requests {
         .validate()
         .responseData { response in
             switch response.result {
-            case .success:
-                completion()
-            case .failure:
-                print("error")
+            case .success(let data):
+                completion(data)
+            case .failure(let error):
+                print("\(error.localizedDescription)")
             }
         }
     }

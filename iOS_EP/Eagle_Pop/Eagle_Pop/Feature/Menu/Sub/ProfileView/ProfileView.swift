@@ -31,6 +31,7 @@ struct ProfileView: View {
                         Spacer()
                         
                         Button(action: {
+                            viewStore.send(.editProfile)
                             
                         }, label: {
                             Text("회원정보 수정 \(Image(systemName: "chevron.right"))")
@@ -41,11 +42,11 @@ struct ProfileView: View {
                     .padding(.top, 5)
                     
                     HStack {
-                        Image(systemName: "person.fill") //프로필 사진
+                        Image("Sihun") //프로필 사진
                             .resizable()
-                            .foregroundColor(.white)
+                            .foregroundColor(Color("default"))
                             .background(Color.gray)
-                            .font(.headline)
+                            .font(.title)
                             .frame(width: 60, height: 60)
                             .frame(alignment: .leading)
                             .cornerRadius(30)
@@ -73,13 +74,13 @@ struct ProfileView: View {
                     
                     HStack {
                         Menu(viewStore.menuTitle) {
+                            Button("총 공부한 시간") { viewStore.send(.selectDailyStudyTime) }
                             Button("오늘 공부한 시간") { viewStore.send(.selectDailyStudyTime) }
                             Button("이번 주 공부한 시간") { viewStore.send(.selectWeeklyStudyTime) }
                             Button("이번 달 공부한 시간") { viewStore.send(.selectMonthlyStudyTime) }
                         }
                         .font(.custom(pretendardMedium, size: 18))
                         .foregroundColor(.gray)
-                        .animation(.none)
                         .padding(.leading, 5)
                         
                         Text(viewStore.studyTime)
@@ -88,11 +89,11 @@ struct ProfileView: View {
                         Spacer()
                     }
                 }
-                .padding(.horizontal, 20)
+                .padding(.horizontal, 0)
             }
             .padding(.top, 20)
-            .padding(.horizontal)
-            .frame(height: 240, alignment: .top)
+            .padding(.horizontal, 0)
+            .frame(height: 200, alignment: .top)
         }
     }
 }
