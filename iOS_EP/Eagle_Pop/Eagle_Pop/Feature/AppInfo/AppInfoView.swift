@@ -9,7 +9,7 @@ import SwiftUI
 import ComposableArchitecture
 
 struct AppInfoView: View {
-    let store: StoreOf<MenuCore>
+    let store: StoreOf<AppInfoCore>
     
     let appInfoArray: [AppInfoArray] = [
         AppInfoArray(
