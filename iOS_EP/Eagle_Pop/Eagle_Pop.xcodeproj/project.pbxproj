@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		85072C962ABADE4E00269B5C /* client_224818744622-7ervdk2meqo3qme5s8ov003sot0goigt.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85072C952ABADE4E00269B5C /* client_224818744622-7ervdk2meqo3qme5s8ov003sot0goigt.apps.googleusercontent.com.plist */; };
-		85072C992ABAE96A00269B5C /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 85072C982ABAE96A00269B5C /* GoogleSignIn */; };
-		85072C9B2ABAE96A00269B5C /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 85072C9A2ABAE96A00269B5C /* GoogleSignInSwift */; };
 		85072C9C2ABAFE8900269B5C /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8597CA232AB9E80C00A3487E /* Pretendard-Bold.otf */; };
 		85072C9D2ABAFE8900269B5C /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8597CA222AB9E80C00A3487E /* Pretendard-Light.otf */; };
 		85072C9E2ABAFE8900269B5C /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8597CA1F2AB9E80C00A3487E /* Pretendard-Medium.otf */; };
@@ -47,7 +45,6 @@
 		856C73AB2ADB52F6004CBC9C /* SigninCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C73AA2ADB52F6004CBC9C /* SigninCore.swift */; };
 		856C73AD2ADD11C1004CBC9C /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C73AC2ADD11C1004CBC9C /* CustomButtonStyle.swift */; };
 		856C74082ADE146B004CBC9C /* SocialCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C74072ADE146B004CBC9C /* SocialCore.swift */; };
-		856C74122ADECF46004CBC9C /* OpenTDS in Frameworks */ = {isa = PBXBuildFile; productRef = 856C74112ADECF46004CBC9C /* OpenTDS */; };
 		856C74142ADFC456004CBC9C /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C74132ADFC456004CBC9C /* Token.swift */; };
 		856C74162ADFC7C7004CBC9C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C74152ADFC7C7004CBC9C /* API.swift */; };
 		856C74182ADFCC43004CBC9C /* SigninModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C74172ADFCC43004CBC9C /* SigninModel.swift */; };
@@ -70,6 +67,9 @@
 		859467C92A95FF8600F565E4 /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859467C82A95FF8600F565E4 /* SocialView.swift */; };
 		859467CD2A96017500F565E4 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859467CC2A96017500F565E4 /* MenuView.swift */; };
 		859469452A9D9BCF00F565E4 /* CircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859469442A9D9BCF00F565E4 /* CircleProgressBar.swift */; };
+		859704DC2AEEA87F009CE952 /* EditProfileCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859704DB2AEEA87F009CE952 /* EditProfileCore.swift */; };
+		859704DF2AEEC1B9009CE952 /* EditProfileSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859704DE2AEEC1B9009CE952 /* EditProfileSideEffect.swift */; };
+		859704E02AEEC1B9009CE952 /* EditProfileRouterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859704DD2AEEC1B9009CE952 /* EditProfileRouterBuilder.swift */; };
 		8597CA2A2AB9FEA300A3487E /* MainCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8597CA292AB9FEA300A3487E /* MainCore.swift */; };
 		8597CA302ABA002F00A3487E /* Eagle-Pop-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8597CA2F2ABA002F00A3487E /* Eagle-Pop-Info.plist */; };
 		8598B8332ADFD799005D52D9 /* SigninRouteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598B8322ADFD799005D52D9 /* SigninRouteBuilder.swift */; };
@@ -85,6 +85,11 @@
 		8598B8652AE2E3CE005D52D9 /* AppInfoSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598B8622AE2E3CE005D52D9 /* AppInfoSideEffect.swift */; };
 		859E1BB02AB9631700F8C37D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 859E1BAF2AB9631700F8C37D /* ComposableArchitecture */; settings = {ATTRIBUTES = (Required, ); }; };
 		85CC87F12AE78F9A00846A9B /* OpenSoruceCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CC87F02AE78F9A00846A9B /* OpenSoruceCore.swift */; };
+		85E4A4492AF23A5100006FCC /* SimpleRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E4A4482AF23A5100006FCC /* SimpleRankingView.swift */; };
+		85E4A44B2AF23FBC00006FCC /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E4A44A2AF23FBC00006FCC /* EditProfile.swift */; };
+		85F326422AEFC23C00D1A320 /* OpenTDS in Frameworks */ = {isa = PBXBuildFile; productRef = 85F326412AEFC23C00D1A320 /* OpenTDS */; };
+		85F326442AEFC54500D1A320 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 85F326432AEFC54500D1A320 /* GoogleSignIn */; };
+		85F326462AEFC54500D1A320 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 85F326452AEFC54500D1A320 /* GoogleSignInSwift */; };
 		85FACF0F2AAAA7B70003A06F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FACF0E2AAAA7B70003A06F /* Request.swift */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +147,9 @@
 		859467C82A95FF8600F565E4 /* SocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialView.swift; sourceTree = "<group>"; };
 		859467CC2A96017500F565E4 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		859469442A9D9BCF00F565E4 /* CircleProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBar.swift; sourceTree = "<group>"; };
+		859704DB2AEEA87F009CE952 /* EditProfileCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileCore.swift; sourceTree = "<group>"; };
+		859704DD2AEEC1B9009CE952 /* EditProfileRouterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileRouterBuilder.swift; sourceTree = "<group>"; };
+		859704DE2AEEC1B9009CE952 /* EditProfileSideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileSideEffect.swift; sourceTree = "<group>"; };
 		8597CA1F2AB9E80C00A3487E /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		8597CA202AB9E80C00A3487E /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		8597CA212AB9E80C00A3487E /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
@@ -162,6 +170,8 @@
 		8598B8622AE2E3CE005D52D9 /* AppInfoSideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoSideEffect.swift; sourceTree = "<group>"; };
 		8598B8632AE2E3CE005D52D9 /* AppInfoRouterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoRouterBuilder.swift; sourceTree = "<group>"; };
 		85CC87F02AE78F9A00846A9B /* OpenSoruceCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSoruceCore.swift; sourceTree = "<group>"; };
+		85E4A4482AF23A5100006FCC /* SimpleRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRankingView.swift; sourceTree = "<group>"; };
+		85E4A44A2AF23FBC00006FCC /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
 		85FACF0E2AAAA7B70003A06F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,12 +180,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				856C74122ADECF46004CBC9C /* OpenTDS in Frameworks */,
-				85072C9B2ABAE96A00269B5C /* GoogleSignInSwift in Frameworks */,
 				8570456B2AC2D38900315057 /* LinkNavigator in Frameworks */,
-				85072C992ABAE96A00269B5C /* GoogleSignIn in Frameworks */,
+				85F326462AEFC54500D1A320 /* GoogleSignInSwift in Frameworks */,
 				859467BF2A95FC5900F565E4 /* Alamofire in Frameworks */,
 				859E1BB02AB9631700F8C37D /* ComposableArchitecture in Frameworks */,
+				85F326422AEFC23C00D1A320 /* OpenTDS in Frameworks */,
+				85F326442AEFC54500D1A320 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,24 +198,16 @@
 				857021DE2AA8A55B002CB09E /* CustomTimePickerView.swift */,
 				854A909A2ACDE2E300AEA6CF /* getData.swift */,
 				856C73AC2ADD11C1004CBC9C /* CustomButtonStyle.swift */,
+				85E4A4482AF23A5100006FCC /* SimpleRankingView.swift */,
 			);
 			path = Component;
-			sourceTree = "<group>";
-		};
-		85072CC52ABDB7A900269B5C /* Sub */ = {
-			isa = PBXGroup;
-			children = (
-				851323AD2AE92CF800A3DF80 /* ProfileView */,
-				857045672AC2BA6100315057 /* EditProfileView.swift */,
-			);
-			path = Sub;
 			sourceTree = "<group>";
 		};
 		851323AD2AE92CF800A3DF80 /* ProfileView */ = {
 			isa = PBXGroup;
 			children = (
 				85072CC62ABDB7BE00269B5C /* ProfileView.swift */,
-				851323AB2AE92CDB00A3DF80 /* StudyTime.swift */,
+				859704D62AEE9F9E009CE952 /* Edit */,
 			);
 			path = ProfileView;
 			sourceTree = "<group>";
@@ -288,9 +290,9 @@
 		857045742AC30CDC00315057 /* TabView */ = {
 			isa = PBXGroup;
 			children = (
+				8598B8442AE0B75A005D52D9 /* RootTabSideEffect.swift */,
 				859467AE2A95F05100F565E4 /* RootTabView.swift */,
 				854A90A52ACF144500AEA6CF /* RootTabRouteBuilder.swift */,
-				8598B8442AE0B75A005D52D9 /* RootTabSideEffect.swift */,
 			);
 			path = TabView;
 			sourceTree = "<group>";
@@ -314,6 +316,7 @@
 			children = (
 				8594679F2A95EF0C00F565E4 /* Eagle_Pop */,
 				8594679E2A95EF0C00F565E4 /* Products */,
+				85F3263D2AEFC20400D1A320 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -355,6 +358,7 @@
 				859467C72A95FF3B00F565E4 /* Social */,
 				859467C42A95FE7200F565E4 /* Ranking */,
 				859467CB2A96014400F565E4 /* Menu */,
+				851323AD2AE92CF800A3DF80 /* ProfileView */,
 				853C602A2AD69C0E00ACD89A /* AppInfo */,
 			);
 			path = Feature;
@@ -441,9 +445,21 @@
 				85072CC92ABDB81700269B5C /* MenuCore.swift */,
 				857045752AC3A74E00315057 /* MenuSideEffect.swift */,
 				853C60342AD6B3E100ACD89A /* MenuRouterBuilder.swift */,
-				85072CC52ABDB7A900269B5C /* Sub */,
+				851323AB2AE92CDB00A3DF80 /* StudyTime.swift */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		859704D62AEE9F9E009CE952 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				857045672AC2BA6100315057 /* EditProfileView.swift */,
+				859704DB2AEEA87F009CE952 /* EditProfileCore.swift */,
+				859704DE2AEEC1B9009CE952 /* EditProfileSideEffect.swift */,
+				859704DD2AEEC1B9009CE952 /* EditProfileRouterBuilder.swift */,
+				85E4A44A2AF23FBC00006FCC /* EditProfile.swift */,
+			);
+			path = Edit;
 			sourceTree = "<group>";
 		};
 		85B8108F2ACD7C5A007D61E8 /* Sound */ = {
@@ -451,6 +467,13 @@
 			children = (
 			);
 			path = Sound;
+			sourceTree = "<group>";
+		};
+		85F3263D2AEFC20400D1A320 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		85FACF042AAA9B4D0003A06F /* SubView */ = {
@@ -481,10 +504,10 @@
 			packageProductDependencies = (
 				859467BE2A95FC5900F565E4 /* Alamofire */,
 				859E1BAF2AB9631700F8C37D /* ComposableArchitecture */,
-				85072C982ABAE96A00269B5C /* GoogleSignIn */,
-				85072C9A2ABAE96A00269B5C /* GoogleSignInSwift */,
 				8570456A2AC2D38900315057 /* LinkNavigator */,
-				856C74112ADECF46004CBC9C /* OpenTDS */,
+				85F326412AEFC23C00D1A320 /* OpenTDS */,
+				85F326432AEFC54500D1A320 /* GoogleSignIn */,
+				85F326452AEFC54500D1A320 /* GoogleSignInSwift */,
 			);
 			productName = Eagle_Pop;
 			productReference = 8594679D2A95EF0C00F565E4 /* Eagle_Pop.app */;
@@ -519,7 +542,7 @@
 				859E1BAE2AB9631700F8C37D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				85072C972ABAE96A00269B5C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				857045692AC2D38900315057 /* XCRemoteSwiftPackageReference "LinkNavigator" */,
-				856C74102ADECF46004CBC9C /* XCRemoteSwiftPackageReference "OpenTDS" */,
+				85F326402AEFC23C00D1A320 /* XCRemoteSwiftPackageReference "OpenTDS" */,
 			);
 			productRefGroup = 8594679E2A95EF0C00F565E4 /* Products */;
 			projectDirPath = "";
@@ -569,6 +592,7 @@
 				855396402AE781F600575932 /* VersionInfoSideEffect.swift in Sources */,
 				854A90972ACDB41800AEA6CF /* SocialListView.swift in Sources */,
 				857045682AC2BA6100315057 /* EditProfileView.swift in Sources */,
+				859704DC2AEEA87F009CE952 /* EditProfileCore.swift in Sources */,
 				8553963F2AE781F600575932 /* VersionInfoRouteBuilder.swift in Sources */,
 				8598B83D2ADFF11F005D52D9 /* MainRouteBuilder.swift in Sources */,
 				85300D4B2ACC359B009AC322 /* RankingInfo.swift in Sources */,
@@ -577,8 +601,10 @@
 				8553963A2AE7815000575932 /* DeveloperInfoRouteBuilder.swift in Sources */,
 				853C60352AD6B3E100ACD89A /* MenuRouterBuilder.swift in Sources */,
 				855396422AE78CAE00575932 /* VersionInfoCore.swift in Sources */,
+				859704DF2AEEC1B9009CE952 /* EditProfileSideEffect.swift in Sources */,
 				859467C12A95FE2F00F565E4 /* MainView.swift in Sources */,
 				859467C62A95FF2100F565E4 /* RankingView.swift in Sources */,
+				85E4A44B2AF23FBC00006FCC /* EditProfile.swift in Sources */,
 				8572D9BA2AB1CE5F00E70274 /* Fonts.swift in Sources */,
 				856C74082ADE146B004CBC9C /* SocialCore.swift in Sources */,
 				8598B8612AE2E2FC005D52D9 /* AppInfoCore.swift in Sources */,
@@ -588,6 +614,7 @@
 				8570456F2AC3033600315057 /* AppDependency.swift in Sources */,
 				8572D9BC2AB1F82B00E70274 /* TimerView.swift in Sources */,
 				8598B8392ADFD857005D52D9 /* SocialSideEffect.swift in Sources */,
+				859704E02AEEC1B9009CE952 /* EditProfileRouterBuilder.swift in Sources */,
 				85072CCA2ABDB81700269B5C /* MenuCore.swift in Sources */,
 				8553963B2AE7815000575932 /* DeveloperInfoSideEffect.swift in Sources */,
 				85072CC72ABDB7BE00269B5C /* ProfileView.swift in Sources */,
@@ -609,6 +636,7 @@
 				859467A12A95EF0C00F565E4 /* Eagle_PopApp.swift in Sources */,
 				857045712AC30BAB00315057 /* AppRouterGroup.swift in Sources */,
 				854A90A62ACF144500AEA6CF /* RootTabRouteBuilder.swift in Sources */,
+				85E4A4492AF23A5100006FCC /* SimpleRankingView.swift in Sources */,
 				853C60312AD69CB000ACD89A /* VersionInfoView.swift in Sources */,
 				853C60372AD6B7AE00ACD89A /* AppSideEffect.swift in Sources */,
 				855396362AE7809C00575932 /* OpenSourceSideEffect.swift in Sources */,
@@ -832,14 +860,6 @@
 				minimumVersion = 7.0.0;
 			};
 		};
-		856C74102ADECF46004CBC9C /* XCRemoteSwiftPackageReference "OpenTDS" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Mercen-Lee/OpenTDS.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		857045692AC2D38900315057 /* XCRemoteSwiftPackageReference "LinkNavigator" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/interactord/LinkNavigator.git";
@@ -864,24 +884,17 @@
 				minimumVersion = 1.2.0;
 			};
 		};
+		85F326402AEFC23C00D1A320 /* XCRemoteSwiftPackageReference "OpenTDS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mercen-Lee/OpenTDS.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		85072C982ABAE96A00269B5C /* GoogleSignIn */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 85072C972ABAE96A00269B5C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
-			productName = GoogleSignIn;
-		};
-		85072C9A2ABAE96A00269B5C /* GoogleSignInSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 85072C972ABAE96A00269B5C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
-			productName = GoogleSignInSwift;
-		};
-		856C74112ADECF46004CBC9C /* OpenTDS */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 856C74102ADECF46004CBC9C /* XCRemoteSwiftPackageReference "OpenTDS" */;
-			productName = OpenTDS;
-		};
 		8570456A2AC2D38900315057 /* LinkNavigator */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 857045692AC2D38900315057 /* XCRemoteSwiftPackageReference "LinkNavigator" */;
@@ -896,6 +909,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 859E1BAE2AB9631700F8C37D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		85F326412AEFC23C00D1A320 /* OpenTDS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85F326402AEFC23C00D1A320 /* XCRemoteSwiftPackageReference "OpenTDS" */;
+			productName = OpenTDS;
+		};
+		85F326432AEFC54500D1A320 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85072C972ABAE96A00269B5C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		85F326452AEFC54500D1A320 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85072C972ABAE96A00269B5C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
