@@ -23,9 +23,10 @@ struct OpenSourceView: View {
             NavigationView {
                 ScrollView {
                     Rectangle()
+                        .frame(height: 5)
                         .padding(.vertical, 10)
                         .padding(.horizontal, 0)
-                        .foregroundColor(Color("customLightGray"))
+                        .foregroundColor(Color(UIColor.lightGray))
                     
                     VStack(alignment: .leading, spacing: 20) {
                         ForEach(0..<openSourceNames.count, id: \.self) { index in
@@ -53,12 +54,17 @@ struct OpenSourceView: View {
                         }
                     }
                     .frame(alignment: .top)
-                    .padding(.top, 40)
+                    .padding(.top, 10)
                     
                 }
-                
+                .navigationBarTitle(Text("OpenSource"), displayMode: .large)
+                .navigationBarItems(leading: Button {
+                    viewStore.send(.back)
+                } label: {
+                    Text("\(Image(systemName: "chevron.left")) 뒤로가기")
+                })
             }
-            .navigationBarTitle(Text("Profile"), displayMode: .large)
+//            .toolbar(.visible, for: .navigationBar)
 
         }
     }
