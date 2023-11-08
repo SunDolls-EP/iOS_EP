@@ -7,16 +7,18 @@
 
 import Foundation
 import LinkNavigator
+import SwiftUI
+import ComposableArchitecture
 
 struct RootTabRouteBuilder: RouteBuilder {
-    
-  var matchPath: String { "root" }
 
-  var build: (LinkNavigatorType, [String: String], DependencyType) -> MatchingViewController? {
-    { navigator, items, dependency in
-        return WrappingController(matchPath: matchPath) {
-        RootTabView(navigator: navigator)
-      }
+    var matchPath: String { "root" }
+    
+    var build: (LinkNavigatorType, [String: String], DependencyType) -> MatchingViewController? {
+        { navigator, items, dependency in
+            return WrappingController(matchPath: matchPath) {
+                RootTabView(navigator: navigator)
+            }
+        }
     }
-  }
 }
