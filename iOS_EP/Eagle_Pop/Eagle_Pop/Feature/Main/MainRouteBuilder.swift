@@ -25,8 +25,3 @@ struct MainRouteBuilder: RouteBuilder {
         }
     }
 }
-extension [String: String] {
-  fileprivate func getValue(key: String) -> String? {
-    first(where: { $0.key == key })?.value as? String
-  }
-}

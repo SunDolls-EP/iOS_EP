@@ -7,6 +7,7 @@
 
 import SwiftUI
 import ComposableArchitecture
+import Alamofire
 import OpenTDS
 
 struct MainView: View {
@@ -15,6 +16,10 @@ struct MainView: View {
     let store: StoreOf<MainCore>
     
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
+    
+    let sizes = [90, 110, 85]
+    let names = ["성의근", "최시훈", "혜성"]
+    let images = ["https://lh3.googleusercontent.com/a/ACg8ocKlnIRak92dnMXxnLt3nFZoSPDosqXPS9-tD71Q9QA3EA=s96-c", "https://lh3.googleusercontent.com/a/ACg8ocK1Wvgt-PkiGcwk02KAPlNGMTwMJoyixIcPR5v5lyyA=s96-c", "https://lh3.googleusercontent.com/a/ACg8ocJtJEWGB5I3AxTUbseFU4pNm-qdicTs55mGLiq4shVI=s96-c"]
 
     var body: some View {
         
@@ -44,27 +49,8 @@ struct MainView: View {
                             Button(action: {
                                 selection = 2
                             }) {
-                                let sizes = [90, 110, 85]
-                                let names = ["황주완", "최시훈", "이혜성"]
-                                let images = ["Juwan", "Sihun", "Hyeseong"]
-                                ForEach(0..<sizes.count, id: \.self) { index in
-                                    let size = sizes[index]
-                                    let name = names[index]
-                                    let image = images[index]
-                                    VStack {
-                                        Image(image)
-                                            .resizable()
-                                            .foregroundColor(Color("default"))
-                                            .background(Color.gray)
-                                            .frame(width: CGFloat(size), height: CGFloat(size))
-                                            .cornerRadius(CGFloat(size) / 2)
-                                            .font(.title)
-                                            .frame(width: size != 110 ? 90 : nil)
-                                        
-                                        Text(name)
-                                            .font(.custom("pretendardMedium", size: size == 110 ? 30 : 25))
-                                            .foregroundColor(.black)
-                                    }
+                                ForEach(0..<sizes.count, id: \.self) { info in
+                                    SimpleRanking(size: sizes[info], name: names[info], imageName: images[info])
                                 }
                             }
                             .padding(.horizontal, 20)
@@ -80,6 +66,13 @@ struct MainView: View {
                 }
                 .navigationBarTitle(Text("Eagle Pop"), displayMode: .inline)
                 .background(Color("background"))
+                .navigationBarItems(trailing: Button {
+                    viewStore.send(.sheetToSetting)
+                } label: {
+                    Image(systemName: "gearshape")
+                        .foregroundStyle(.black)
+                        .font(.title3)
+                })
             }
         }
     }

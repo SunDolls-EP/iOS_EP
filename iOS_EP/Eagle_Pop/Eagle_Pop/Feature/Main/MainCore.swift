@@ -14,6 +14,7 @@ import OpenTDS
 import LinkNavigator
 
 struct MainCore: Reducer {
+    @Dependency(\.sideEffect.main) private var sideEffect
     struct MainState: Equatable {
         var paths: [String] = []
         var message = ""
@@ -28,7 +29,7 @@ struct MainCore: Reducer {
         case selectMonthly
         case selectRanking
         case getSimpleRanking
-        
+        case sheetToSetting
         
         // MARK: - TimerView
         case soundPlay
@@ -65,7 +66,6 @@ struct MainCore: Reducer {
             return .none
         case .selectRanking:
             state.selection = 2
-            print("1")
             return .none
         case .getSimpleRanking:
             getSimpleRank()
@@ -73,7 +73,9 @@ struct MainCore: Reducer {
         case .soundPlay:
             
             return .none
-            
+        case .sheetToSetting:
+            sideEffect.sheetToSetting()
+            return .none
         }
     }
     // MARK: - func
@@ -88,7 +90,7 @@ struct MainCore: Reducer {
             case .success(let value):
                 print("Success: \(value)")
             case .failure(let error):
-                print("Error: \(error.localizedDescription)")
+                print("Main getSimpleRank Error: \(error.localizedDescription)")
             }
         }
     }

@@ -11,7 +11,7 @@ import LinkNavigator
 
 public protocol MainSideEffect {
     
-    var routeToSetting: () -> Void { get }
+    var sheetToSetting: () -> Void { get }
 }
 
 // MARK: - MainSideEffectLive
@@ -24,9 +24,9 @@ public struct MainSideEffectLive {
     }
 }
 extension MainSideEffectLive: MainSideEffect {
-    public var routeToSetting: () -> Void {
+    public var sheetToSetting: () -> Void {
         {
-            navigator.next(paths: ["setting"], items: [:], isAnimated: true)
+            navigator.sheet(paths: ["setting"], items: [:], isAnimated: true)
         }
     }
 }
