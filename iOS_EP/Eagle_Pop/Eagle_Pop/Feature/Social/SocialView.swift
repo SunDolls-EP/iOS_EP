@@ -17,19 +17,29 @@ struct SocialView: View {
             NavigationView {
                 List {
                     Section {
-                        TextField("검색할 회원의 아이디를 입력해주세요", text: $serchUserId)
-                            .textFieldStyle(PlainTextFieldStyle())
-                            .padding(.all, 0)
+                        ZStack {
+                            TextField("검색할 회원의 이름과 태그를 입력해주세요", text: $serchUserId)
+                                .textFieldStyle(PlainTextFieldStyle())
+                                .padding(.all, 0)
+                            HStack {
+                                Spacer()
+                                Button {
+                                    serchUserId = ""
+                                } label: {
+                                    Image(systemName: "magnifyingglass")
+                                        .foregroundColor(.black)
+                                }
+                            }
+                        }
                     } header: {
                         Text("검색")
                             .font(.custom(pretendardMedium, size: 15))
                         
                     }
-                    
-                    SocialListView()
-                        .frame(alignment: .center)
+                        SocialListView()
+                            .frame(alignment: .center)
                 }
-                .navigationBarTitle(Text("Social"), displayMode: .large)
+                .navigationBarTitle(Text("소셜"), displayMode: .large)
                 .refreshable{
                     func getSomeData() async {
                         await Task.sleep(3_000_000_000)
@@ -42,6 +52,5 @@ struct SocialView: View {
 
 
 #Preview {
-    SocialView(store: Store(initialState: SocialCore.State()) {
-        SocialCore()})
+    SocialView(store: Store(initialState: SocialCore.State()) { SocialCore() })
 }
