@@ -9,7 +9,7 @@ import SwiftUI
 import ComposableArchitecture
 
 struct AppInfoCore: Reducer {
-    @Dependency(\.sideEffect.appInfo) var sideEffect
+    @Dependency(\.sideEffect.appInfo) private var sideEffect
     
     struct AppInfoState: Equatable {
     }
@@ -32,9 +32,8 @@ struct AppInfoCore: Reducer {
 
             case "버전 정보":
                 sideEffect.routeToVersionInfo()
-
             case "로그아웃":
-                print("로그아웃")
+                sideEffect.routeToReset()
             default:
                 break
                 

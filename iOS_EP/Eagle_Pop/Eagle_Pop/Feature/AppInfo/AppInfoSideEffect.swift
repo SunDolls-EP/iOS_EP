@@ -14,6 +14,7 @@ public protocol AppInfoSideEffect {
     var routeToDeveloperInfo: () -> Void { get }
     
     var routeToVersionInfo: () -> Void { get }
+    var routeToReset: () -> Void {get}
     
 }
 public struct AppInfoSideEffectLive {
@@ -38,5 +39,10 @@ extension AppInfoSideEffectLive: AppInfoSideEffect {
         {
             navigator.next(paths: ["versioninfo"], items: [:], isAnimated: true)
         }
+    }
+    public var routeToReset: () -> Void {
+      {
+        navigator.replace(paths: ["signin"], items: [:], isAnimated: false)
+      }
     }
 }
