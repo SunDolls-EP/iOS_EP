@@ -8,11 +8,11 @@
 import Foundation
 
 struct SigninModel: Codable {
-    let username: String
-    let tag: String
-    let schoolName: String
-    let totalStudyTime: Int
-    let profileUrl: String
-    let createdAt: String
-    let modifiedAt: String
+    let username: String?
+    let tag: String?
+    let schoolName: String?
+    let totalStudyTime: Int?
+    let profileUrl: String?
+    let createdAt: String?
+    let modifiedAt: String?
 }
