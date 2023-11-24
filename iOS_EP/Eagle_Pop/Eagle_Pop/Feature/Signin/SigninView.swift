@@ -32,7 +32,7 @@ struct SigninView: View {
                     
                 } label: {
                     HStack(spacing: 50) {
-                        Image("developerInfo")
+                        Image("google")
                             .frame(alignment: .leading)
                             .padding(.leading, 20)
                         Text("google로 로그인하기")
@@ -50,20 +50,21 @@ struct SigninView: View {
                     viewStore.send(.selectSignin)
                 } label: {
                     HStack(spacing: 50) {
-                        Image("developerInfo")
+                        Image("kakao")
                             .frame(alignment: .leading)
                             .padding(.leading, 20)
                         Text("카카오로 로그인하기")
                             .font(.custom(pretendardBold, size: 14.47))
                             .padding(.leading, 5)
+                            .foregroundColor(.black)
                         Spacer()
 
                     }
                 }
                 .frame(width: 325.5, height: signinButtonHeight)
-                .background(Color(red: 1, green: 0.9, blue: 0))
-                .cornerRadius(signinButtonHeight/2)
-                .buttonStyle(CustomButtonStyle())
+                .background(Color.white)
+                .cornerRadius(27.5)
+                .buttonStyle(CustomKakaoButtonStyle())
                 
                 Text("-로그인 방식을 선택해주세요-")
                     .font(.custom(pretendardMedium, size: 15))
@@ -71,6 +72,7 @@ struct SigninView: View {
             .padding(.top, 0)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
+        .toolbar(.hidden, for: .navigationBar)
     }
 }
 
