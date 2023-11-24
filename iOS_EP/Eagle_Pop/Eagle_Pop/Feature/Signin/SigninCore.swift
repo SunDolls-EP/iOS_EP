@@ -10,6 +10,7 @@ import UIKit
 import GoogleSignIn
 import Alamofire
 import LinkNavigator
+import SwiftUI
 
 
 struct SigninCore: Reducer {
@@ -21,15 +22,20 @@ struct SigninCore: Reducer {
         var message = ""
         var quote: String = "오늘 걷지 않으면 내일은 뛰어야 한다"
         var givenName: String = ""
-        var profilePicUrl: String = ""
         var isLoggedIn: Bool = false
         var errorMessage: String = ""
+        var username: String = "이름이 없습니다"
+        var tag: String = "태그가 없습니다"
+        var schoolName: String = "학교가 없습니다"
+        var vartotalStudyTime: Int = 0
+        var profileUrl: String = ""
+        var prifileImage = Image( "https://lh3.googleusercontent.com/a/ACg8ocKdVx0I5ALRuGIcwFozzqfFm7vO1l4sElhN10HTqaL8=s96-c")
         
     }
     
     enum SigninAction: Equatable {
         case selectSignin
-        case didLogin(oauth2: String)
+//        case didLogin(oauth2: String)
     }
     
     func reduce(into state: inout SigninState, action: SigninAction) -> Effect<SigninAction> {
@@ -43,45 +49,39 @@ struct SigninCore: Reducer {
                     return .init()
                 }
             }
-//            GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController) { signInResult, error in
-//                guard error == nil else { return }
-//                guard let signInResult = signInResult else { return }
-//                
-//                let idToken = String(signInResult.user.idToken!.tokenString)
-//                print(idToken)
-//
-//                
-//                signInResult.user.refreshTokensIfNeeded { user, error in
-//                    guard error == nil else {
-//                        print("구글 로그인 에러!")
-//                        print(error?.localizedDescription)
-//                        return
-//                    }
-//                    guard let user = user else { return }
-//                    
-//                    let url = "\(api)/auth/login/oauth2/google"
-//                    AF.request(url, method: .get, headers: ["Authorization": idToken])
-//                        .validate()
-//                        .responseDecodable(of: SigninModel.self) { response in
-//                            switch response.result {
-//                            case .success(let value):
-//                                print("Success: \(value)")
-                                sideEffect.routeToTabView()
-//                            case .failure(let error):
-//                                print("Error: \(error.localizedDescription)")
-//                            }
-//                        }
-//                }
-//            }
+                                    GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController) { signInResult, error in
+                                        guard error == nil else { return }
+                                        guard let signInResult = signInResult else { return }
+                        
+                                        let idToken = String(signInResult.user.idToken!.tokenString)
+                                        print(idToken)
             
-            return .none
+                                        Token.save(.accessToken, idToken)
             
-        case .didLogin(let _):
+                                        signInResult.user.refreshTokensIfNeeded { user, error in
+                                            guard error == nil else {
+                                                print("구글 로그인 에러!")
+                                                print(error?.localizedDescription ?? "")
+                                                return
+                                            }
+                                            guard user != nil else { return }
             
+                                            let url = "\(api)/auth/login/oauth2/google"
+                                            AF.request(url, method: .get, headers: ["Authorization": "\(Token.get(.accessToken)!)"])
+                                                .validate()
+                                                .responseDecodable(of: SigninModel.self) { response in
+                                                    switch response.result {
+                                                    case .success:
+                                                        sideEffect.routeToTabView()
+                                                    case .failure(let error):
+                                                        
+                                                        print("Signin selectSignin Error: \(error.localizedDescription)")
+                                                    }
+                                                }
+                                        }
+                                    }
             return .none
         }
     }
-    
-    
 }
 
