@@ -64,7 +64,6 @@ struct OpenSourceView: View {
                     Text("\(Image(systemName: "chevron.left")) 뒤로가기")
                 })
             }
-//            .toolbar(.visible, for: .navigationBar)
 
         }
     }
