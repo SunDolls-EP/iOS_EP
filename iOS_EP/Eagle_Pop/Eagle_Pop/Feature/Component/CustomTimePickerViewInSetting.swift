@@ -1,13 +1,13 @@
 //
-//  UITimePickerView.swift
+//  CustomTimePickerViewInSetting.swift
 //  Eagle_Pop
 //
-//  Created by 최시훈 on 2023/09/06.
+//  Created by 최시훈 on 2023/11/06.
 //
 
 import SwiftUI
 
-struct CustomTimePickerView: UIViewRepresentable {
+struct CustomTimePickerViewInSetting: UIViewRepresentable {
     let textField = UITextField()
     let picker = UIPickerView()
     
@@ -41,7 +41,7 @@ struct CustomTimePickerView: UIViewRepresentable {
     }
  
     func updateUIView(_ uiView: UITextField, context: Context) {
-        uiView.text = "\(self.selected) 분"
+        uiView.text = "\(self.selected) minutes"
     }
     
     func makeCoordinator() -> Coordinator {
@@ -49,10 +49,10 @@ struct CustomTimePickerView: UIViewRepresentable {
     }
     
     class Coordinator: NSObject, UIPickerViewDelegate, UIPickerViewDataSource {
-        let parent: CustomTimePickerView
+        let parent: CustomTimePickerViewInSetting
         lazy var doneAction = UIAction(handler: doneButtonTapped(action:))
         
-        init(_ parent: CustomTimePickerView) {
+        init(_ parent: CustomTimePickerViewInSetting) {
             self.parent = parent
         }
 
@@ -65,12 +65,12 @@ struct CustomTimePickerView: UIViewRepresentable {
         }
         
         func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-            return "\(parent.values[row]) 분"
+            return "\(parent.values[row]) minutes"
         }
         
         func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
             parent.selected = parent.values[row]
-            parent.textField.text = "\(parent.values[row]) 분"
+            parent.textField.text = "\(parent.values[row]) minutes"
         }
         
         private func doneButtonTapped(action: UIAction) {
