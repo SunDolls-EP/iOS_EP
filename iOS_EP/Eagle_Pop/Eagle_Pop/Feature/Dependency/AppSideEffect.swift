@@ -24,19 +24,32 @@ public struct AppSideEffect: DependencyKey {
     let linkNavigator: LinkNavigatorType
     let signin: SigninSideEffect
     let root: RootTabSideEffect
-//    let main: MainSideEffect
+    let main: MainSideEffect
 //    let social: SocialSideEffect
 //    let ranking: RankingSideEffect
     let menu: MenuSideEffect
     let appInfo: AppInfoSideEffect
+    let openSource: OpenSourceSideEffect
+    let developerInfo: DeveloperInfoSideEffect
+    let versionInfo: VersionInfoSideEffect
+    let editProfile: EditProfileSideEffect
+    let setting: SettingSideEffect
     
     public static var liveValue: AppSideEffect {
         .init(
             linkNavigator: navigator,
             signin: SigninSideEffectLive(navigator: navigator),
             root: RootTabSideEffectLive(navigator: navigator),
+            main: MainSideEffectLive(navigator: navigator),
             menu: MenuSideEffectLive(navigator: navigator),
-            appInfo: AppInfoSideEffectLive(navigator: navigator)
+            appInfo: AppInfoSideEffectLive(navigator: navigator),
+            openSource: OpenSourceSideEffectLive(navigator: navigator),
+            developerInfo: DeveloperInfoSideEffectLive(navigator: navigator),
+            versionInfo: VersionInfoSideEffectLive(navigator: navigator), 
+            editProfile: EditProfileSideEffectLive(navigator: navigator),
+            setting: SettingSideEffectLive(navigator: navigator)
+            
+
         )
     }
 }

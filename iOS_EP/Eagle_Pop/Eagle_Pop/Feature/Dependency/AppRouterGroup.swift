@@ -16,8 +16,13 @@ struct AppRouterGroup {
         SocialRouteBuilder(),
         RankingRouteBuilder(),
         MenuRouteBuilder(),
-        AppInfoRouteBuilder()
-      
+        AppInfoRouteBuilder(),
+        OpenSourceRouteBuilder(),
+        DeveloperInfoRouteBuilder(),
+        VersionInfoRouteBuilder(),
+        EditProfileRouteBuilder(),
+        SettingRouteBuilder(),
     ]
   }
 }
+ 
